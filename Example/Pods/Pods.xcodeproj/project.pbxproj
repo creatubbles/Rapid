@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		356B1274D41D5D5F36046D5945B9C0E5 /* Rapid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F49A69AB20AC8BC1E674F7A993DB22 /* Rapid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E81353097ECA238505829D3782E9863 /* Pods-Rapid_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 622172AC083EFF610B415D0D810832B2 /* Pods-Rapid_Tests-dummy.m */; };
+		83A4F3747C10F6D3E4504A9D9D9E1E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		ADF19D64D06617E3E7A3C47E93922CF5 /* Rapid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7D59E87185496653D0441C0884F81C /* Rapid-dummy.m */; };
+		B2CBF2881E87259D00B1C1F0 /* A11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2761E8720D000B1C1F0 /* A11yControl.swift */; };
+		B2CBF2891E8725A200B1C1F0 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2751E8720D000B1C1F0 /* A11y.swift */; };
+		B2CBF28A1E8725A500B1C1F0 /* A11yControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2771E8720D000B1C1F0 /* A11yControlType.swift */; };
+		B2CBF28B1E8725A800B1C1F0 /* A11yView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2781E8720D000B1C1F0 /* A11yView.swift */; };
+		B2CBF28C1E8725AC00B1C1F0 /* A11yViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2791E8720D000B1C1F0 /* A11yViewControl.swift */; };
+		B2CBF28D1E8725AF00B1C1F0 /* BaseA11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF27A1E8720D000B1C1F0 /* BaseA11yControl.swift */; };
+		B2CBF28E1E8725B300B1C1F0 /* Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF27B1E8720D000B1C1F0 /* Rapid.swift */; };
+		B2CBF2951E8725D000B1C1F0 /* XCUIApplication+A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2911E8725CC00B1C1F0 /* XCUIApplication+A11y.swift */; };
+		B2CBF2961E8725D300B1C1F0 /* XCUIElementQuery+A11yControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBF2921E8725CC00B1C1F0 /* XCUIElementQuery+A11yControlType.swift */; };
+		B2CBF2981E8725ED00B1C1F0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CBF2971E8725ED00B1C1F0 /* XCTest.framework */; };
+		ED80846D4C15A343D243E01CC4805083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F5FD80C28E31528D302C73CB14FE5CBB /* Pods-Rapid_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD34B2002EB2C6D7378EB5743DF7AE25 /* Pods-Rapid_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DFA233CD3D0B482DCD36EDF86590E48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5503699AD0EC1095408CA212AB28251;
+			remoteInfo = Rapid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		365CC72145D754A3F3A1D2E1A4793BDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B29098079C454B85D44746D0EB5092 /* Rapid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rapid-prefix.pch"; sourceTree = "<group>"; };
+		4447DF3D0AC83614F9B450D03505B7B4 /* Pods-Rapid_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rapid_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		45E57A59AB616281C459A2FCF63E2EA7 /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C33632F4B399286E859DD95F7B6D80 /* Pods-Rapid_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Rapid_Tests.modulemap"; sourceTree = "<group>"; };
+		46CF18A9E4E6B7B5F953856E901C2242 /* Pods-Rapid_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rapid_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50F952C052E9F6D2B234453C30BD7AFC /* Pods-Rapid_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rapid_Tests-resources.sh"; sourceTree = "<group>"; };
+		622172AC083EFF610B415D0D810832B2 /* Pods-Rapid_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rapid_Tests-dummy.m"; sourceTree = "<group>"; };
+		63E6F3F60189071C2CDD2192BF3366FA /* Rapid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rapid.xcconfig; sourceTree = "<group>"; };
+		63F49A69AB20AC8BC1E674F7A993DB22 /* Rapid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rapid-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A40D9C0F9DD7E91095A14264B950A219 /* Pods-Rapid_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rapid_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A920A5C684FE273D78EF660871D3DC91 /* Pods-Rapid_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rapid_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B2CBF2751E8720D000B1C1F0 /* A11y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11y.swift; sourceTree = "<group>"; };
+		B2CBF2761E8720D000B1C1F0 /* A11yControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yControl.swift; sourceTree = "<group>"; };
+		B2CBF2771E8720D000B1C1F0 /* A11yControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yControlType.swift; sourceTree = "<group>"; };
+		B2CBF2781E8720D000B1C1F0 /* A11yView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yView.swift; sourceTree = "<group>"; };
+		B2CBF2791E8720D000B1C1F0 /* A11yViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yViewControl.swift; sourceTree = "<group>"; };
+		B2CBF27A1E8720D000B1C1F0 /* BaseA11yControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseA11yControl.swift; sourceTree = "<group>"; };
+		B2CBF27B1E8720D000B1C1F0 /* Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rapid.swift; sourceTree = "<group>"; };
+		B2CBF2911E8725CC00B1C1F0 /* XCUIApplication+A11y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCUIApplication+A11y.swift"; path = "Rapid/Tests/XCUIApplication+A11y.swift"; sourceTree = "<group>"; };
+		B2CBF2921E8725CC00B1C1F0 /* XCUIElementQuery+A11yControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCUIElementQuery+A11yControlType.swift"; path = "Rapid/Tests/XCUIElementQuery+A11yControlType.swift"; sourceTree = "<group>"; };
+		B2CBF2971E8725ED00B1C1F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B66513D46B974B1EA7DDEE97C4517FBB /* Pods_Rapid_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rapid_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD34B2002EB2C6D7378EB5743DF7AE25 /* Pods-Rapid_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rapid_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1A55E5A89F05A9554245DCABD9B7558 /* Rapid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Rapid.modulemap; sourceTree = "<group>"; };
+		DF7D59E87185496653D0441C0884F81C /* Rapid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rapid-dummy.m"; sourceTree = "<group>"; };
+		F558346579D29F7401F3578172EF3E54 /* Pods-Rapid_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rapid_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD0C1E8ED2B98294428D043C341B06FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		671A8FCE0AE2A1CDE3E4CB10BE42FE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CBF2981E8725ED00B1C1F0 /* XCTest.framework in Frameworks */,
+				ED80846D4C15A343D243E01CC4805083 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C98EA7698D8A86401ED79DD3709E451D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A4F3747C10F6D3E4504A9D9D9E1E2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014F680C12B8F8F1F21B4013F1B41949 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECD6051893F409C68113715712DC5F29 /* Rapid */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1A016D8AC03EA6A9F3320F74CCFA05FE /* Rapid */ = {
+			isa = PBXGroup;
+			children = (
+				B2CBF2751E8720D000B1C1F0 /* A11y.swift */,
+				B2CBF2761E8720D000B1C1F0 /* A11yControl.swift */,
+				B2CBF2771E8720D000B1C1F0 /* A11yControlType.swift */,
+				B2CBF2781E8720D000B1C1F0 /* A11yView.swift */,
+				B2CBF2791E8720D000B1C1F0 /* A11yViewControl.swift */,
+				B2CBF27A1E8720D000B1C1F0 /* BaseA11yControl.swift */,
+				B2CBF27B1E8720D000B1C1F0 /* Rapid.swift */,
+			);
+			path = Rapid;
+			sourceTree = "<group>";
+		};
+		2105592BDE032C6F0A6976DE046D581B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD0C1E8ED2B98294428D043C341B06FF /* Info.plist */,
+				D1A55E5A89F05A9554245DCABD9B7558 /* Rapid.modulemap */,
+				63E6F3F60189071C2CDD2192BF3366FA /* Rapid.xcconfig */,
+				DF7D59E87185496653D0441C0884F81C /* Rapid-dummy.m */,
+				40B29098079C454B85D44746D0EB5092 /* Rapid-prefix.pch */,
+				63F49A69AB20AC8BC1E674F7A993DB22 /* Rapid-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Rapid";
+			sourceTree = "<group>";
+		};
+		5053AE76E06FC3880E1D3F50F0412531 /* Pods-Rapid_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				365CC72145D754A3F3A1D2E1A4793BDE /* Info.plist */,
+				46C33632F4B399286E859DD95F7B6D80 /* Pods-Rapid_Tests.modulemap */,
+				A40D9C0F9DD7E91095A14264B950A219 /* Pods-Rapid_Tests-acknowledgements.markdown */,
+				F558346579D29F7401F3578172EF3E54 /* Pods-Rapid_Tests-acknowledgements.plist */,
+				622172AC083EFF610B415D0D810832B2 /* Pods-Rapid_Tests-dummy.m */,
+				A920A5C684FE273D78EF660871D3DC91 /* Pods-Rapid_Tests-frameworks.sh */,
+				50F952C052E9F6D2B234453C30BD7AFC /* Pods-Rapid_Tests-resources.sh */,
+				BD34B2002EB2C6D7378EB5743DF7AE25 /* Pods-Rapid_Tests-umbrella.h */,
+				4447DF3D0AC83614F9B450D03505B7B4 /* Pods-Rapid_Tests.debug.xcconfig */,
+				46CF18A9E4E6B7B5F953856E901C2242 /* Pods-Rapid_Tests.release.xcconfig */,
+			);
+			name = "Pods-Rapid_Tests";
+			path = "Target Support Files/Pods-Rapid_Tests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				014F680C12B8F8F1F21B4013F1B41949 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FFF4E90B27ED0BE9FE0163F0E81FADAE /* Products */,
+				7FF03E18EFF74835216FC992E2137F15 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FF03E18EFF74835216FC992E2137F15 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5053AE76E06FC3880E1D3F50F0412531 /* Pods-Rapid_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B2CBF2851E8720E100B1C1F0 /* Rapid/Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B2CBF2911E8725CC00B1C1F0 /* XCUIApplication+A11y.swift */,
+				B2CBF2921E8725CC00B1C1F0 /* XCUIElementQuery+A11yControlType.swift */,
+			);
+			name = Rapid/Tests;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2CBF2971E8725ED00B1C1F0 /* XCTest.framework */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECD6051893F409C68113715712DC5F29 /* Rapid */ = {
+			isa = PBXGroup;
+			children = (
+				1A016D8AC03EA6A9F3320F74CCFA05FE /* Rapid */,
+				B2CBF2851E8720E100B1C1F0 /* Rapid/Tests */,
+				2105592BDE032C6F0A6976DE046D581B /* Support Files */,
+			);
+			name = Rapid;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FFF4E90B27ED0BE9FE0163F0E81FADAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B66513D46B974B1EA7DDEE97C4517FBB /* Pods_Rapid_Tests.framework */,
+				45E57A59AB616281C459A2FCF63E2EA7 /* Rapid.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		744A5402B2BF786DF152789CD9E89295 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356B1274D41D5D5F36046D5945B9C0E5 /* Rapid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB5C59594AC0CA98AE697410CCA1B1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FD80C28E31528D302C73CB14FE5CBB /* Pods-Rapid_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73EF202AAC4551D30A6AB5C10FE9BDDB /* Pods-Rapid_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9981DA725AF073E2F5700D50DE739D45 /* Build configuration list for PBXNativeTarget "Pods-Rapid_Tests" */;
+			buildPhases = (
+				6E870515B183C6C16AD0D53E267390EF /* Sources */,
+				C98EA7698D8A86401ED79DD3709E451D /* Frameworks */,
+				FEB5C59594AC0CA98AE697410CCA1B1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E509D26EEDDE0FDB11658E974D27922 /* PBXTargetDependency */,
+			);
+			name = "Pods-Rapid_Tests";
+			productName = "Pods-Rapid_Tests";
+			productReference = B66513D46B974B1EA7DDEE97C4517FBB /* Pods_Rapid_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5503699AD0EC1095408CA212AB28251 /* Rapid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1BE130BC7B7BAF44AF76A65B70CDCB /* Build configuration list for PBXNativeTarget "Rapid" */;
+			buildPhases = (
+				010A77B54F1ECE1F7B1878A38BEF704A /* Sources */,
+				671A8FCE0AE2A1CDE3E4CB10BE42FE07 /* Frameworks */,
+				744A5402B2BF786DF152789CD9E89295 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rapid;
+			productName = Rapid;
+			productReference = 45E57A59AB616281C459A2FCF63E2EA7 /* Rapid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					73EF202AAC4551D30A6AB5C10FE9BDDB = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FFF4E90B27ED0BE9FE0163F0E81FADAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73EF202AAC4551D30A6AB5C10FE9BDDB /* Pods-Rapid_Tests */,
+				C5503699AD0EC1095408CA212AB28251 /* Rapid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		010A77B54F1ECE1F7B1878A38BEF704A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2CBF2891E8725A200B1C1F0 /* A11y.swift in Sources */,
+				ADF19D64D06617E3E7A3C47E93922CF5 /* Rapid-dummy.m in Sources */,
+				B2CBF28C1E8725AC00B1C1F0 /* A11yViewControl.swift in Sources */,
+				B2CBF2881E87259D00B1C1F0 /* A11yControl.swift in Sources */,
+				B2CBF28B1E8725A800B1C1F0 /* A11yView.swift in Sources */,
+				B2CBF2951E8725D000B1C1F0 /* XCUIApplication+A11y.swift in Sources */,
+				B2CBF28A1E8725A500B1C1F0 /* A11yControlType.swift in Sources */,
+				B2CBF28E1E8725B300B1C1F0 /* Rapid.swift in Sources */,
+				B2CBF2961E8725D300B1C1F0 /* XCUIElementQuery+A11yControlType.swift in Sources */,
+				B2CBF28D1E8725AF00B1C1F0 /* BaseA11yControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E870515B183C6C16AD0D53E267390EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E81353097ECA238505829D3782E9863 /* Pods-Rapid_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E509D26EEDDE0FDB11658E974D27922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rapid;
+			target = C5503699AD0EC1095408CA212AB28251 /* Rapid */;
+			targetProxy = 9DFA233CD3D0B482DCD36EDF86590E48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02E83A380797A22C75DD023001D19F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CF18A9E4E6B7B5F953856E901C2242 /* Pods-Rapid_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rapid_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rapid_Tests/Pods-Rapid_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Rapid_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A40D612105297744885E96015FBC0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E6F3F60189071C2CDD2192BF3366FA /* Rapid.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rapid/Rapid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rapid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rapid/Rapid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Rapid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EA7B3778598349188EF8994650300282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E6F3F60189071C2CDD2192BF3366FA /* Rapid.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rapid/Rapid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rapid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rapid/Rapid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Rapid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F403BB335D230835A7E210CDB43B4580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4447DF3D0AC83614F9B450D03505B7B4 /* Pods-Rapid_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Rapid_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rapid_Tests/Pods-Rapid_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Rapid_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9981DA725AF073E2F5700D50DE739D45 /* Build configuration list for PBXNativeTarget "Pods-Rapid_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F403BB335D230835A7E210CDB43B4580 /* Debug */,
+				02E83A380797A22C75DD023001D19F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1BE130BC7B7BAF44AF76A65B70CDCB /* Build configuration list for PBXNativeTarget "Rapid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7B3778598349188EF8994650300282 /* Debug */,
+				6A40D612105297744885E96015FBC0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Rapid_Tests' do
+  pod 'Rapid', :path => '../'
+  
+  
+end
