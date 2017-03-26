@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B28AC98E1E885DB400E62219"
-               BuildableName = "Rapid.framework"
-               BlueprintName = "Rapid"
+               BlueprintIdentifier = "B28AC99E1E885E1900E62219"
+               BuildableName = "RapidTests.framework"
+               BlueprintName = "RapidTests"
                ReferencedContainer = "container:Rapid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B28AC98E1E885DB400E62219"
-            BuildableName = "Rapid.framework"
-            BlueprintName = "Rapid"
+            BlueprintIdentifier = "B28AC99E1E885E1900E62219"
+            BuildableName = "RapidTests.framework"
+            BlueprintName = "RapidTests"
             ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B28AC98E1E885DB400E62219"
-            BuildableName = "Rapid.framework"
-            BlueprintName = "Rapid"
+            BlueprintIdentifier = "B28AC99E1E885E1900E62219"
+            BuildableName = "RapidTests.framework"
+            BlueprintName = "RapidTests"
             ReferencedContainer = "container:Rapid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
