@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'XCTest'
   s.dependency 'Quick', '~> 0.10.0'
   s.dependency 'Nimble', '~> 5.0.0'
-  s.dependency 'Rapid', s.version.to_s
+  s.dependency 'RapidA11y'
 
 end

@@ -3,7 +3,7 @@
 # valid spec before submitting.
 
 Pod::Spec.new do |s|
-  s.name             = 'Rapid'
+  s.name             = 'RapidA11y'
   s.version          = '0.1.4'
   s.summary          = 'Quick/Nimble based Rapid UI testing framework.'
   s.description      = 'Built by Creatubbles\' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.'
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/coolbnjmn/Rapid.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'Rapid/*'
+  s.source_files = 'RapidA11y/*'
 end
