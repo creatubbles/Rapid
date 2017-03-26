@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double RapidTestsVersionNumber;
 FOUNDATION_EXPORT const unsigned char RapidTestsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RapidTests/PublicHeader.h>
-
-

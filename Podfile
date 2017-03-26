@@ -8,3 +8,9 @@ target 'Rapid' do
   # Pods for Rapid
 
 end
+
+target 'RapidTests' do
+  use_frameworks!
+
+  pod 'Rapid'
+end
