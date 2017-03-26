@@ -1,6 +1,0 @@
-framework module Rapid {
-  umbrella header "Rapid-umbrella.h"
-
-  export *
-  module * { export * }
-}
