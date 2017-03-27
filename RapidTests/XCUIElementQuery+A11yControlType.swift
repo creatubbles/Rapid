@@ -6,7 +6,7 @@
 //
 //
 
-import Rapid
+import RapidA11y
 import XCTest
 
 public extension A11yControlType {

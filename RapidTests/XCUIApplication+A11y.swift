@@ -15,7 +15,7 @@
 
 import XCTest
 import Nimble
-import Rapid
+import RapidA11y
 import Foundation
 
 public extension XCUIApplication {
