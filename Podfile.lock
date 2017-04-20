@@ -21,17 +21,17 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RapidA11y:
-    :commit: b3cb799a2db5fd63ae1b392d752f1e49ebfbb497
+    :commit: b5371358cf3dea8e9d35f770017bc4bee08f5489
     :git: git@github.com:coolbnjmn/Rapid.git
   RapidTests:
-    :commit: b3cb799a2db5fd63ae1b392d752f1e49ebfbb497
+    :commit: b5371358cf3dea8e9d35f770017bc4bee08f5489
     :git: git@github.com:coolbnjmn/Rapid.git
 
 SPEC CHECKSUMS:
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
-  RapidA11y: 1b163ca201485d49e6c16c9d60c836c1e6404649
-  RapidTests: 1b9321ce5b4e47c53ac84f84fd97fe922037a3ca
+  RapidA11y: da7405af0727c146fe74389436da0ed47dec0b78
+  RapidTests: 80d2099d39362c725cedaf53fc7221f1d6adc705
 
 PODFILE CHECKSUM: 321d14075024a8f77d32f68618249843bc717b2b
 

@@ -5,6 +5,7 @@
 //  Created by Benjamin Hendricks on 21/03/2017.
 //  Copyright © 2017 Creatubbles. All rights reserved.
 //
+import UIKit
 
 public protocol StringRawRepresentable: RawRepresentable {
     typealias RawValue = String
