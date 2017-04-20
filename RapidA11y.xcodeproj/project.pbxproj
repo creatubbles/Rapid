@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		2D87752998DE60D0575F17E4 /* Pods_RapidA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94411AA81D04770220B0F7B /* Pods_RapidA11y.framework */; };
 		3EC7A3E0D7C7647A195558A3 /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6005BF47C982342B8E31F18 /* Pods_RapidTests.framework */; };
+		3F115DD01EA8D3E1003537E8 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */; };
 		B20901821E8867BD0091BE07 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901791E8867BD0091BE07 /* A11y.swift */; };
 		B20901831E8867BD0091BE07 /* A11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017A1E8867BD0091BE07 /* A11yControl.swift */; };
 		B20901841E8867BD0091BE07 /* A11yControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017B1E8867BD0091BE07 /* A11yControlType.swift */; };
 		B20901851E8867BD0091BE07 /* A11yView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017C1E8867BD0091BE07 /* A11yView.swift */; };
 		B20901861E8867BD0091BE07 /* A11yViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017D1E8867BD0091BE07 /* A11yViewControl.swift */; };
 		B20901871E8867BD0091BE07 /* BaseA11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */; };
-		B20901881E8867BD0091BE07 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B209017F1E8867BD0091BE07 /* LICENSE */; };
 		B20901891E8867BD0091BE07 /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = B20901801E8867BD0091BE07 /* Rapid.h */; };
 		B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901811E8867BD0091BE07 /* Rapid.swift */; };
 		B20901941E8867C50091BE07 /* RapidTests.h in Headers */ = {isa = PBXBuildFile; fileRef = B20901921E8867C50091BE07 /* RapidTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		01DBC696298691C84B5AE4E6 /* Pods-RapidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		8C9E22077BDE80AE147439E9 /* Pods-RapidA11y.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidA11y.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidA11y/Pods-RapidA11y.debug.xcconfig"; sourceTree = "<group>"; };
 		A94411AA81D04770220B0F7B /* Pods_RapidA11y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidA11y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B066015FA4E3BCA9FC6F2C74 /* Pods-RapidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		B209017C1E8867BD0091BE07 /* A11yView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yView.swift; sourceTree = "<group>"; };
 		B209017D1E8867BD0091BE07 /* A11yViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yViewControl.swift; sourceTree = "<group>"; };
 		B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseA11yControl.swift; sourceTree = "<group>"; };
-		B209017F1E8867BD0091BE07 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B20901801E8867BD0091BE07 /* Rapid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		B20901811E8867BD0091BE07 /* Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rapid.swift; sourceTree = "<group>"; };
 		B20901901E8867C50091BE07 /* RapidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RapidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,13 +102,13 @@
 		B20901701E88678B0091BE07 /* RapidA11y */ = {
 			isa = PBXGroup;
 			children = (
+				3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */,
 				B20901791E8867BD0091BE07 /* A11y.swift */,
 				B209017A1E8867BD0091BE07 /* A11yControl.swift */,
 				B209017B1E8867BD0091BE07 /* A11yControlType.swift */,
 				B209017C1E8867BD0091BE07 /* A11yView.swift */,
 				B209017D1E8867BD0091BE07 /* A11yViewControl.swift */,
 				B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */,
-				B209017F1E8867BD0091BE07 /* LICENSE */,
 				B20901801E8867BD0091BE07 /* Rapid.h */,
 				B20901811E8867BD0091BE07 /* Rapid.swift */,
 				B20901721E88678B0091BE07 /* Info.plist */,
@@ -247,7 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20901881E8867BD0091BE07 /* LICENSE in Resources */,
+				3F115DD01EA8D3E1003537E8 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +564,7 @@
 				B20901971E8867C50091BE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
