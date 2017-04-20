@@ -1,0 +1,28 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/Release-iphoneos/RapidA11y.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RapidA11y-Swift.h",
+          'external-contents': "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/Release-iphoneos/RapidA11y.framework/Headers/RapidA11y-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/Release-iphoneos/RapidA11y.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/RapidA11y.build/Release-iphoneos/RapidA11y.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

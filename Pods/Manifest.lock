@@ -21,10 +21,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RapidA11y:
-    :commit: e0e93a13dcf2b64272ce2354247620ad5db9ebb5
+    :commit: 9b00eaedfb1481f36d022d0499fcc18abb808dbe
     :git: git@github.com:coolbnjmn/Rapid.git
   RapidTests:
-    :commit: e0e93a13dcf2b64272ce2354247620ad5db9ebb5
+    :commit: 9b00eaedfb1481f36d022d0499fcc18abb808dbe
     :git: git@github.com:coolbnjmn/Rapid.git
 
 SPEC CHECKSUMS:
@@ -33,6 +33,6 @@ SPEC CHECKSUMS:
   RapidA11y: 20f583babc48eef78dc7a8bca3abcd028e82d5bb
   RapidTests: 4fecce05ae106bbc60e7a79cb4c1f69cc589d208
 
-PODFILE CHECKSUM: 321d14075024a8f77d32f68618249843bc717b2b
+PODFILE CHECKSUM: faa06fb7b5a3fac672c0f42985b3c37b68caacc0
 
 COCOAPODS: 1.2.0

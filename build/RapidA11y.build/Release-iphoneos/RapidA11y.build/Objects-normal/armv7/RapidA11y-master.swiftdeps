@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "825010347aedd877f24644d2d4b640ee"
+build_time: [546021458, 930858000]
+inputs:
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/A11yView.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/A11yViewControl.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/BaseA11yControl.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/Rapid.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/A11yControlType.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/A11y.swift": [9223372036854775807, 0]
+  "/Users/bhendricks/Documents/Work/Creatubbles/Rapid/RapidA11y/A11yControl.swift": [9223372036854775807, 0]
