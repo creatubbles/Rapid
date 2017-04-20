@@ -5,6 +5,7 @@
 //  Created by Benjamin Hendricks on 21/03/2017.
 //  Copyright © 2017 Creatubbles. All rights reserved.
 //
+import UIKit
 
 public typealias A11yViewConfig<Control> = [A11yControlType: [Control]]
 public class A11yView<Control, View> where Control: StringRawRepresentable, View: StringRawRepresentable {
