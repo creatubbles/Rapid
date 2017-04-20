@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RapidDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>RapidTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3F115DD61EA8D5C9003537E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F115DE91EA8D5C9003537E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F115DF41EA8D5C9003537E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B209016D1E88678A0091BE07</key>
 		<dict>
 			<key>primary</key>
