@@ -1,0 +1,10 @@
+framework module RapidTests {
+  umbrella header "RapidTests.h"
+
+  export *
+  module * { export * }
+}
+
+module RapidTests.Swift {
+    header "RapidTests-Swift.h"
+}

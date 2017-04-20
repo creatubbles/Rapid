@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/Release-iphoneos/RapidTests.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/bhendricks/Documents/Work/Creatubbles/Rapid/build/RapidA11y.build/Release-iphoneos/RapidTests.build/unextended-module.modulemap',
+    }]
+  }]
+}
