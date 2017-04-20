@@ -23,10 +23,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RapidA11y:
-    :commit: e2212c3d629597bf8f6938096e76aa7231af1f6d
+    :commit: 678993414c6afe31c90c60b8b15e5cf5ea3b1fac
     :git: git@github.com:coolbnjmn/Rapid.git
   RapidTests:
-    :commit: e2212c3d629597bf8f6938096e76aa7231af1f6d
+    :commit: 678993414c6afe31c90c60b8b15e5cf5ea3b1fac
     :git: git@github.com:coolbnjmn/Rapid.git
 
 SPEC CHECKSUMS:

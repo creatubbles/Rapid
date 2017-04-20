@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/coolbnjmn/Rapid.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'RapidTests/*'
+  s.source_files = 'RapidTests/*.*'
   s.frameworks = 'XCTest'
   s.dependency 'Quick', '~> 0.10.0'
   s.dependency 'Nimble', '~> 5.0.0'
