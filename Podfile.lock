@@ -8,6 +8,8 @@ PODS:
     - RapidA11y
 
 DEPENDENCIES:
+  - Nimble (= 5.0.0)
+  - Quick (= 0.10.0)
   - RapidA11y (from `git@github.com:coolbnjmn/Rapid.git`, branch `master`)
   - RapidTests (from `git@github.com:coolbnjmn/Rapid.git`, branch `master`)
 
@@ -21,10 +23,10 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RapidA11y:
-    :commit: 22423994b38d7003fb6ec90f4a57b78e11ccfa1e
+    :commit: fbf48cd79708fdde7f841630c157c0f8342dc433
     :git: git@github.com:coolbnjmn/Rapid.git
   RapidTests:
-    :commit: 22423994b38d7003fb6ec90f4a57b78e11ccfa1e
+    :commit: fbf48cd79708fdde7f841630c157c0f8342dc433
     :git: git@github.com:coolbnjmn/Rapid.git
 
 SPEC CHECKSUMS:
@@ -33,6 +35,6 @@ SPEC CHECKSUMS:
   RapidA11y: 20f583babc48eef78dc7a8bca3abcd028e82d5bb
   RapidTests: 4fecce05ae106bbc60e7a79cb4c1f69cc589d208
 
-PODFILE CHECKSUM: faa06fb7b5a3fac672c0f42985b3c37b68caacc0
+PODFILE CHECKSUM: 1288e092b7c9cf2cae439d551715f54f00ed4524
 
 COCOAPODS: 1.2.0

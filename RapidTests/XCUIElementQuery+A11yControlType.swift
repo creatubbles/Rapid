@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import RapidA11y
 import XCTest
+import RapidA11y
 
 public extension A11yControlType {
     public func xcElementQueryForControl(_ app: XCUIApplication) -> XCUIElementQuery {

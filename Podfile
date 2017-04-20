@@ -19,6 +19,8 @@ end
 
 target 'RapidTests' do
   pod 'RapidA11y', :git => 'git@github.com:coolbnjmn/Rapid.git', :branch => 'master'
+  pod 'Nimble', '5.0.0'
+  pod 'Quick', '0.10.0'
 end
 
 post_install do |installer|

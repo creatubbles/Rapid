@@ -6,6 +6,7 @@
 //
 //
 
+import Foundation
 import RapidA11y
 import XCTest
 
