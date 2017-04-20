@@ -5,8 +5,7 @@
   "description": "Built by Creatubbles' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.",
   "homepage": "https://github.com/coolbnjmn/Rapid",
   "license": {
-    "type": "MIT",
-    "file": "../RapidA11y/LICENSE.txt"
+    "type": "MIT"
   },
   "authors": {
     "coolbnjmn": "hendricksbenjamin@gmail.com"
