@@ -17,6 +17,8 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
+		3F2B8B051EA92D3000AEEC63 /* LICENSE.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F2B8B001EA92CE900AEEC63 /* LICENSE.txt */; };
+		3F2B8B081EA92D4800AEEC63 /* LICENSE.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F2B8B021EA92CF100AEEC63 /* LICENSE.txt */; };
 		72868FD43D90D7926E7E73F8 /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4A238FEA8811F9A4CEA268 /* Pods_RapidTests.framework */; };
 		B20901821E8867BD0091BE07 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901791E8867BD0091BE07 /* A11y.swift */; };
 		B20901831E8867BD0091BE07 /* A11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017A1E8867BD0091BE07 /* A11yControl.swift */; };
@@ -71,6 +73,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3F2B8B041EA92D0F00AEEC63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = RapidA11y;
+			dstSubfolderSpec = 0;
+			files = (
+				3F2B8B051EA92D3000AEEC63 /* LICENSE.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2B8B071EA92D4300AEEC63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = RapidTests;
+			dstSubfolderSpec = 0;
+			files = (
+				3F2B8B081EA92D4800AEEC63 /* LICENSE.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0454D44443C264CBD69DC723 /* Pods-RapidDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidDemo/Pods-RapidDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		159775C7CD5F9FD9D14FB135 /* Pods-RapidA11y.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidA11y.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidA11y/Pods-RapidA11y.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +115,8 @@
 		3F115DF51EA8D5C9003537E8 /* RapidDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDemoUITests.swift; sourceTree = "<group>"; };
 		3F115DFB1EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2B8B001EA92CE900AEEC63 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3F2B8B021EA92CF100AEEC63 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3F6D454B1EA8DD46003DA7CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		449A2C8F2BBE635CE3837F9A /* Pods-RapidDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidDemoUITests/Pods-RapidDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B08304ADFFA8A47B44FAF8E /* Pods-RapidDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidDemoUITests/Pods-RapidDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +263,7 @@
 		B20901701E88678B0091BE07 /* RapidA11y */ = {
 			isa = PBXGroup;
 			children = (
+				3F2B8B001EA92CE900AEEC63 /* LICENSE.txt */,
 				B20901791E8867BD0091BE07 /* A11y.swift */,
 				B209017A1E8867BD0091BE07 /* A11yControl.swift */,
 				B209017B1E8867BD0091BE07 /* A11yControlType.swift */,
@@ -252,6 +280,7 @@
 		B20901911E8867C50091BE07 /* RapidTests */ = {
 			isa = PBXGroup;
 			children = (
+				3F2B8B021EA92CF100AEEC63 /* LICENSE.txt */,
 				B20901991E8867D10091BE07 /* XCUIApplication+A11y.swift */,
 				B209019A1E8867D10091BE07 /* XCUIElementQuery+A11yControlType.swift */,
 				B20901921E8867C50091BE07 /* RapidTests.h */,
@@ -374,6 +403,7 @@
 				B209016B1E88678A0091BE07 /* Headers */,
 				B209016C1E88678A0091BE07 /* Resources */,
 				7B5BEF3ED0E620A40F792248 /* [CP] Copy Pods Resources */,
+				3F2B8B041EA92D0F00AEEC63 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -394,6 +424,7 @@
 				B209018D1E8867C50091BE07 /* Headers */,
 				B209018E1E8867C50091BE07 /* Resources */,
 				09594B3BF4D8AC3F45C68684 /* [CP] Copy Pods Resources */,
+				3F2B8B071EA92D4300AEEC63 /* CopyFiles */,
 			);
 			buildRules = (
 			);
