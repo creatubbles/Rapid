@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D87752998DE60D0575F17E4 /* Pods_RapidA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94411AA81D04770220B0F7B /* Pods_RapidA11y.framework */; };
+		3EC7A3E0D7C7647A195558A3 /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6005BF47C982342B8E31F18 /* Pods_RapidTests.framework */; };
 		B20901821E8867BD0091BE07 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901791E8867BD0091BE07 /* A11y.swift */; };
 		B20901831E8867BD0091BE07 /* A11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017A1E8867BD0091BE07 /* A11yControl.swift */; };
 		B20901841E8867BD0091BE07 /* A11yControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017B1E8867BD0091BE07 /* A11yControlType.swift */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01DBC696298691C84B5AE4E6 /* Pods-RapidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C9E22077BDE80AE147439E9 /* Pods-RapidA11y.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidA11y.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidA11y/Pods-RapidA11y.debug.xcconfig"; sourceTree = "<group>"; };
+		A94411AA81D04770220B0F7B /* Pods_RapidA11y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidA11y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B066015FA4E3BCA9FC6F2C74 /* Pods-RapidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B209016E1E88678B0091BE07 /* RapidA11y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RapidA11y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20901721E88678B0091BE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B20901791E8867BD0091BE07 /* A11y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11y.swift; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		B20901981E8867D10091BE07 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B20901991E8867D10091BE07 /* XCUIApplication+A11y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+A11y.swift"; sourceTree = "<group>"; };
 		B209019A1E8867D10091BE07 /* XCUIElementQuery+A11yControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+A11yControlType.swift"; sourceTree = "<group>"; };
+		E6005BF47C982342B8E31F18 /* Pods_RapidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4687D238A1AB54627278A28 /* Pods-RapidA11y.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidA11y.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidA11y/Pods-RapidA11y.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D87752998DE60D0575F17E4 /* Pods_RapidA11y.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EC7A3E0D7C7647A195558A3 /* Pods_RapidTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124F1D668EB0A7C60AA5564D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94411AA81D04770220B0F7B /* Pods_RapidA11y.framework */,
+				E6005BF47C982342B8E31F18 /* Pods_RapidTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B20901641E88678A0091BE07 = {
 			isa = PBXGroup;
 			children = (
 				B20901701E88678B0091BE07 /* RapidA11y */,
 				B20901911E8867C50091BE07 /* RapidTests */,
 				B209016F1E88678B0091BE07 /* Products */,
+				BD19E79824EF68433B03C573 /* Pods */,
+				124F1D668EB0A7C60AA5564D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +128,17 @@
 			path = RapidTests;
 			sourceTree = "<group>";
 		};
+		BD19E79824EF68433B03C573 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E22077BDE80AE147439E9 /* Pods-RapidA11y.debug.xcconfig */,
+				F4687D238A1AB54627278A28 /* Pods-RapidA11y.release.xcconfig */,
+				B066015FA4E3BCA9FC6F2C74 /* Pods-RapidTests.debug.xcconfig */,
+				01DBC696298691C84B5AE4E6 /* Pods-RapidTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -133,10 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20901761E88678B0091BE07 /* Build configuration list for PBXNativeTarget "RapidA11y" */;
 			buildPhases = (
+				32ACA0A33953A077068416A4 /* [CP] Check Pods Manifest.lock */,
 				B20901691E88678A0091BE07 /* Sources */,
 				B209016A1E88678A0091BE07 /* Frameworks */,
 				B209016B1E88678A0091BE07 /* Headers */,
 				B209016C1E88678A0091BE07 /* Resources */,
+				17F7DEB4C0355B2163BCBD68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,10 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B20901951E8867C50091BE07 /* Build configuration list for PBXNativeTarget "RapidTests" */;
 			buildPhases = (
+				8117A2047925C616C5A9195A /* [CP] Check Pods Manifest.lock */,
 				B209018B1E8867C50091BE07 /* Sources */,
 				B209018C1E8867C50091BE07 /* Frameworks */,
 				B209018D1E8867C50091BE07 /* Headers */,
 				B209018E1E8867C50091BE07 /* Resources */,
+				F1C38E82A65E7B929F046CB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +260,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F7DEB4C0355B2163BCBD68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidA11y/Pods-RapidA11y-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32ACA0A33953A077068416A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8117A2047925C616C5A9195A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C38E82A65E7B929F046CB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B20901691E88678A0091BE07 /* Sources */ = {
@@ -353,6 +452,7 @@
 		};
 		B20901771E88678B0091BE07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9E22077BDE80AE147439E9 /* Pods-RapidA11y.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -374,6 +474,7 @@
 		};
 		B20901781E88678B0091BE07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4687D238A1AB54627278A28 /* Pods-RapidA11y.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -394,6 +495,7 @@
 		};
 		B20901961E8867C50091BE07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B066015FA4E3BCA9FC6F2C74 /* Pods-RapidTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -415,6 +517,7 @@
 		};
 		B20901971E8867C50091BE07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DBC696298691C84B5AE4E6 /* Pods-RapidTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
