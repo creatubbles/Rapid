@@ -6,7 +6,7 @@
 //  Copyright © 2017 coolbnjmn. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for RapidTests.
 FOUNDATION_EXPORT double RapidTestsVersionNumber;

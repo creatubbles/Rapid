@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		00DD7FBBA07C8810FE68C8CC /* Pods_RapidA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E71B593B20AB38EADDF0DE /* Pods_RapidA11y.framework */; };
 		3F0374ED1EA91D1100E4BF69 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6D454B1EA8DD46003DA7CF /* XCTest.framework */; };
-		3F0374EE1EA91D3400E4BF69 /* XCTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = 3F6D454B1EA8DD46003DA7CF /* XCTest.framework */; };
+		3F0374F01EA9241A00E4BF69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0374EF1EA9241A00E4BF69 /* Foundation.framework */; };
+		3F0374F21EA9242000E4BF69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0374F11EA9242000E4BF69 /* UIKit.framework */; };
 		3F115DDA1EA8D5C9003537E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DD91EA8D5C9003537E8 /* AppDelegate.swift */; };
 		3F115DDC1EA8D5C9003537E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DDB1EA8D5C9003537E8 /* ViewController.swift */; };
 		3F115DDF1EA8D5C9003537E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DDD1EA8D5C9003537E8 /* Main.storyboard */; };
@@ -17,8 +18,6 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
-		3F93CD9E1EA918DD00CA9617 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */; };
-		3F93CD9F1EA918E200CA9617 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DD11EA8D591003537E8 /* LICENSE.txt */; };
 		54360C3A312EF5C1D3D88430 /* Pods_RapidDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DB14316214ECEA4BCFCF16 /* Pods_RapidDemoTests.framework */; };
 		61306B77D8F210330BC1599D /* Pods_RapidDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F30C488EAA01843321E462 /* Pods_RapidDemo.framework */; };
 		723FC46CF2577357D8DBE89C /* Pods_RapidDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F740D3C49B22483922EDD6AF /* Pods_RapidDemoUITests.framework */; };
@@ -37,13 +36,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F0374E71EA91CEA00E4BF69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B20901651E88678A0091BE07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B209016D1E88678A0091BE07;
-			remoteInfo = RapidA11y;
-		};
 		3F115DEB1EA8D5C9003537E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B20901651E88678A0091BE07 /* Project object */;
@@ -87,8 +79,8 @@
 		29C8BCAE98A77DD757E237FB /* Pods-RapidDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidDemoTests/Pods-RapidDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		35DB14316214ECEA4BCFCF16 /* Pods_RapidDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		373766434E06784E1DEBD944 /* Pods-RapidDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RapidDemo/Pods-RapidDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		3F115DD11EA8D591003537E8 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3F0374EF1EA9241A00E4BF69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F0374F11EA9242000E4BF69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F115DD71EA8D5C9003537E8 /* RapidDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F115DD91EA8D5C9003537E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F115DDB1EA8D5C9003537E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0374F21EA9242000E4BF69 /* UIKit.framework in Frameworks */,
+				3F0374F01EA9241A00E4BF69 /* Foundation.framework in Frameworks */,
 				3F0374ED1EA91D1100E4BF69 /* XCTest.framework in Frameworks */,
 				A81D473CA9C16CAD4596E3AC /* Pods_RapidTests.framework in Frameworks */,
 			);
@@ -178,6 +172,8 @@
 		124F1D668EB0A7C60AA5564D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F0374F11EA9242000E4BF69 /* UIKit.framework */,
+				3F0374EF1EA9241A00E4BF69 /* Foundation.framework */,
 				3F6D454B1EA8DD46003DA7CF /* XCTest.framework */,
 				B9E71B593B20AB38EADDF0DE /* Pods_RapidA11y.framework */,
 				C2F30C488EAA01843321E462 /* Pods_RapidDemo.framework */,
@@ -265,7 +261,6 @@
 		B20901701E88678B0091BE07 /* RapidA11y */ = {
 			isa = PBXGroup;
 			children = (
-				3F115DCF1EA8D3E1003537E8 /* LICENSE.txt */,
 				B20901791E8867BD0091BE07 /* A11y.swift */,
 				B209017A1E8867BD0091BE07 /* A11yControl.swift */,
 				B209017B1E8867BD0091BE07 /* A11yControlType.swift */,
@@ -282,7 +277,6 @@
 		B20901911E8867C50091BE07 /* RapidTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F115DD11EA8D591003537E8 /* LICENSE.txt */,
 				B20901991E8867D10091BE07 /* XCUIApplication+A11y.swift */,
 				B209019A1E8867D10091BE07 /* XCUIElementQuery+A11yControlType.swift */,
 				B20901921E8867C50091BE07 /* RapidTests.h */,
@@ -348,8 +342,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F6D45521EA8DD60003DA7CF /* PBXTargetDependency */,
 				3F115DEC1EA8D5C9003537E8 /* PBXTargetDependency */,
+				3F6D45521EA8DD60003DA7CF /* PBXTargetDependency */,
 			);
 			name = RapidDemoTests;
 			productName = RapidDemoTests;
@@ -370,8 +364,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F6D45541EA8DD64003DA7CF /* PBXTargetDependency */,
 				3F115DF71EA8D5C9003537E8 /* PBXTargetDependency */,
+				3F6D45541EA8DD64003DA7CF /* PBXTargetDependency */,
 			);
 			name = RapidDemoUITests;
 			productName = RapidDemoUITests;
@@ -412,7 +406,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F0374E81EA91CEA00E4BF69 /* PBXTargetDependency */,
 			);
 			name = RapidTests;
 			productName = RapidTests;
@@ -511,7 +504,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F93CD9E1EA918DD00CA9617 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +511,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0374EE1EA91D3400E4BF69 /* XCTest.framework in Resources */,
-				3F93CD9F1EA918E200CA9617 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,11 +766,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F0374E81EA91CEA00E4BF69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B209016D1E88678A0091BE07 /* RapidA11y */;
-			targetProxy = 3F0374E71EA91CEA00E4BF69 /* PBXContainerItemProxy */;
-		};
 		3F115DEC1EA8D5C9003537E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3F115DD61EA8D5C9003537E8 /* RapidDemo */;
