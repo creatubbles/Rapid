@@ -1,0 +1,6 @@
+framework module RapidTests {
+  umbrella header "RapidTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
