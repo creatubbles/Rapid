@@ -1,0 +1,6 @@
+framework module RapidA11y {
+  umbrella header "RapidA11y-umbrella.h"
+
+  export *
+  module * { export * }
+}

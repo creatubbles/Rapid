@@ -1,0 +1,33 @@
+{
+  "name": "RapidTests",
+  "version": "0.1.6",
+  "summary": "Quick/Nimble based Rapid UI testing framework.",
+  "description": "Built by Creatubbles' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.",
+  "homepage": "https://github.com/coolbnjmn/Rapid",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "coolbnjmn": "hendricksbenjamin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/coolbnjmn/Rapid.git",
+    "tag": "0.1.6"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "RapidTests/*.*",
+  "frameworks": "XCTest",
+  "dependencies": {
+    "Quick": [
+      "~> 0.10.0"
+    ],
+    "Nimble": [
+      "~> 5.0.0"
+    ],
+    "RapidA11y": [
+
+    ]
+  }
+}
