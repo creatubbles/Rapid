@@ -1,6 +1,6 @@
 {
   "name": "RapidTests",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "summary": "Quick/Nimble based Rapid UI testing framework.",
   "description": "Built by Creatubbles' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.",
   "homepage": "https://github.com/coolbnjmn/Rapid",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/coolbnjmn/Rapid.git",
-    "tag": "0.1.8"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "9.0"

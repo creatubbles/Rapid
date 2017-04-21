@@ -1,8 +1,8 @@
 PODS:
   - Nimble (5.0.0)
   - Quick (0.10.0)
-  - RapidA11y (0.1.8)
-  - RapidTests (0.1.8):
+  - RapidA11y (0.1.9)
+  - RapidTests (0.1.9):
     - Nimble (~> 5.0.0)
     - Quick (~> 0.10.0)
     - RapidA11y
@@ -23,17 +23,17 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   RapidA11y:
-    :commit: 386e46b624781a10e0c66f74fc12b5e86e52f1a2
+    :commit: 4321b42d20b1eef234c44a1324d08e5ac0ed6a99
     :git: git@github.com:coolbnjmn/Rapid.git
   RapidTests:
-    :commit: 386e46b624781a10e0c66f74fc12b5e86e52f1a2
+    :commit: 4321b42d20b1eef234c44a1324d08e5ac0ed6a99
     :git: git@github.com:coolbnjmn/Rapid.git
 
 SPEC CHECKSUMS:
   Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
-  RapidA11y: b75d2759d55f8e81f3c66206236661ec14f2bfd3
-  RapidTests: e3332564124848ebe15febe4ac94d74cbe96da58
+  RapidA11y: 8c0726e546db27bc7c9ffff85e4a875b92f57c55
+  RapidTests: 63fe422afdb635af6969ca6d839148851d1ac64d
 
 PODFILE CHECKSUM: d1027e6878dab69eefe4046d77a04a88773443b3
 
