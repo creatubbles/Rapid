@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RapidA11y'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Quick/Nimble based Rapid UI testing framework.'
   s.description      = 'Built by Creatubbles\' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.'
   s.homepage         = 'https://github.com/coolbnjmn/Rapid'

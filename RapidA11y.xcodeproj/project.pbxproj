@@ -19,8 +19,6 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
-		3F3064971EA92E8300C2AEAB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F3064961EA92E8300C2AEAB /* LICENSE.txt */; };
-		3F3064991EA92E8D00C2AEAB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F3064981EA92E8D00C2AEAB /* LICENSE.txt */; };
 		4790B379781C96649220AD52 /* Pods_RapidA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30DBBF0028D895D511A4918 /* Pods_RapidA11y.framework */; };
 		61D6C584676EE62148F31A35 /* Pods_RapidDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0F9646346E555938E0CBB6 /* Pods_RapidDemoTests.framework */; };
 		B20901821E8867BD0091BE07 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901791E8867BD0091BE07 /* A11y.swift */; };
@@ -510,7 +508,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3064971EA92E8300C2AEAB /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +515,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3064991EA92E8D00C2AEAB /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
