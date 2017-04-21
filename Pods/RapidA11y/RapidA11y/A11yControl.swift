@@ -10,7 +10,11 @@ public class A11yControl<Control>: A11yBaseControl where Control: StringRawRepre
     var controlName: Control
 
     override public var a11yControlName: String {
-        return self.controlName.rawValue
+        /*
+         Force unwrap is ok here, because `StringRawRepresentable` always
+         has a string as it's value, and a crash if it's not is acceptable.
+         */
+        return self.controlName.rawValue as! String
     }
 
     private var a11yControlTypeInternal: A11yControlType
