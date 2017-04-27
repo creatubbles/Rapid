@@ -1,6 +1,6 @@
 //
 //  BaseA11yControl.swift
-//  Creatubbles Explorer
+//  Creatubbles
 //
 //  Created by Benjamin Hendricks on 21/03/2017.
 //  Copyright © 2017 Creatubbles. All rights reserved.
