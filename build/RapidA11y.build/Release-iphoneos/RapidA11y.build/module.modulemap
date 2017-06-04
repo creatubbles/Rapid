@@ -1,3 +1,0 @@
-framework module RapidA11y {
-    header "RapidA11y-Swift.h"
-}
