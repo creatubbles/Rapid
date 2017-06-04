@@ -1,13 +1,13 @@
-#
-# Be sure to run `pod lib lint RapidTests.podspec' to ensure this is a
-# valid spec before submitting.
-
 Pod::Spec.new do |s|
   s.name             = 'RapidTests'
-  s.version          = '0.1.10'
-  s.summary          = 'Quick/Nimble based Rapid UI testing framework.'
-  s.description      = 'Built by Creatubbles\' iOS team. Simple framework to bring in accessibility identifiers in a clean way to then be fetched in UI tests. There, views can be waited upon based on existence and tappability.'
-  s.homepage         = 'https://github.com/coolbnjmn/Rapid'
+  s.version          = '1.0'
+  s.summary          = 'UI testing framework build on top of Quick & Nimble.'
+  s.description      = 'RapidTests is a UI testing framework built to ease the creation and
+  maintenance of UI tests in a complex iOS application. This framework is used only in
+  test targets, but depends on a partner framework that is integrated into the
+  application targets (RapidA11y). RapidTests is heavily built on Quick & Nimble for the
+  definition and syntax of writing tests and assertions in Swift.'
+  s.homepage         = 'https://github.com/creatubbles/Rapid'
   s.license          = { :type => 'MIT', :text => '
     Copyright (c) 2017 coolbnjmn <hendricksbenjamin@gmail.com>
 
@@ -29,8 +29,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
   ' }
-  s.author           = { 'coolbnjmn' => 'hendricksbenjamin@gmail.com' }
-  s.source           = { :git => 'https://github.com/coolbnjmn/Rapid.git', :tag => s.version.to_s }
+  s.author           = { 'coolbnjmn' => 'benjamin@creatubbles.com' }
+  s.source           = { :git => 'https://github.com/creatubbles/Rapid.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.source_files = 'RapidTests/*.*'
