@@ -42,19 +42,25 @@ public extension XCUIApplication {
      * Test will FAIL if element is not present and tappable after 30 second timeout (first 30 sec for present, then another 30 for tappable).
      */
     @discardableResult
-    public func elementFor(_ control: A11yBaseControl) -> XCUIElement {
+    public func elementFor(_ control: A11yBaseControl, andTimeout timeout: TimeInterval = 30) -> XCUIElement {
         let element = uncheckedElementFor(control)
         expect(element).toNot(beNil())
-        wait(withTimeout: 30, for: element.isHittable)
+        wait(withTimeout: timeout, for: element.isHittable)
         expect(element.isHittable).to(beTrue())
         return element
     }
 
     @discardableResult
-    public func elementExistsFor(_ control: A11yBaseControl) -> Bool {
+    public func elementExistsFor(_ control: A11yBaseControl, andTimeout timeout: TimeInterval = 10) -> Bool {
         let element = uncheckedElementFor(control)
-        wait(withFailureAssertion: false, withTimeout: 10, for: element.exists)
+        wait(withFailureAssertion: false, withTimeout: timeout, for: element.exists)
         return element.exists
+    }
+    
+    @discardableResult
+    public func elementHittable(_ element: XCUIElement, andTimeout timeout: TimeInterval = 10) -> Bool {
+        wait(withFailureAssertion: false, withTimeout: timeout, for: element.isHittable)
+        return element.isHittable
     }
 
     func waitForConditionOnQueueWithTimeout(_ timeout: TimeInterval, AndQueue queue: DispatchQueue, WithCondition  condition: @escaping (()->Bool)) -> Bool {

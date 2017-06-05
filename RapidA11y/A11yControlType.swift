@@ -31,6 +31,7 @@ public enum A11yControlType {
     case navigationBar
     case scrollView
     case searchField
+    case secureTextField
     case `switch`
     case tabBar
     case tabBarItem

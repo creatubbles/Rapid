@@ -2,6 +2,17 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.4:
+- Re-insert `secureTextField` control type and add custom switch cases to gauge
+if a certain UITextField has `secureTextEntry` on or not.
+- New method added to wait for hittability, used like this:
+```
+let app = XCUIApplication()
+// timeout is an optional param, defaulting to 10 seconds
+// result of `elementHittable` is discardable
+let isHittable: Bool = app.elementHittable(controlThatExists, andTimeout: 15)
+```
+
 ##### v 1.0.3:
 - Fix mapping of control types in RapidTests, so as to use fixes from 1.0.1
 in RapidA11y

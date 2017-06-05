@@ -76,7 +76,9 @@ public class A11y<Control, View> where Control: StringRawRepresentable, View: St
                 viewConfig = addControlType(.table, newControl: control, toConfig: viewConfig)
             case is UITextView:
                 viewConfig = addControlType(.textView, newControl: control, toConfig: viewConfig)
-            case is UITextField:
+            case let textField as UITextField where textField.isSecureTextEntry:
+                viewConfig = addControlType(.secureTextField, newControl: control, toConfig: viewConfig)
+            case let textField as UITextField where !textField.isSecureTextEntry:
                 viewConfig = addControlType(.textField, newControl: control, toConfig: viewConfig)
             case is UIToolbar:
                 viewConfig = addControlType(.toolbar, newControl: control, toConfig: viewConfig)
