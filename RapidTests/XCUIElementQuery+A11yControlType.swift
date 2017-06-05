@@ -49,6 +49,8 @@ public extension A11yControlType {
             return app.scrollViews
         case .searchField:
             return app.searchFields
+        case .secureTextField:
+            return app.secureTextFields
         case .`switch`:
             return app.switches
         case .tabBar:

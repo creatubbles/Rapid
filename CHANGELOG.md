@@ -2,6 +2,9 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.5:
+- Re-insert `secureTextField` control type query helper
+
 ##### v 1.0.4:
 - Re-insert `secureTextField` control type and add custom switch cases to gauge
 if a certain UITextField has `secureTextEntry` on or not.
