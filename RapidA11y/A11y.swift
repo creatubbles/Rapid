@@ -50,8 +50,7 @@ public class A11y<Control, View> where Control: StringRawRepresentable, View: St
                 viewConfig = addControlType(.barButtonItem, newControl: control, toConfig: viewConfig)
             case is UIButton:
                 viewConfig = addControlType(.button, newControl: control, toConfig: viewConfig)
-            case is UITableViewCell:
-            case is UICollectionViewCell:
+            case is UITableViewCell, is UICollectionViewCell:
                 viewConfig = addControlType(.cell, newControl: control, toConfig: viewConfig)
             case is UICollectionView:
                 viewConfig = addControlType(.collectionView, newControl: control, toConfig: viewConfig)
