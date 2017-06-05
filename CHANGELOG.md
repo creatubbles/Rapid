@@ -2,6 +2,10 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.3:
+- Fix mapping of control types in RapidTests, so as to use fixes from 1.0.1
+in RapidA11y
+
 ##### v 1.0.2:
 - Bump version number because of mismanaged version update for 1.0.1
 

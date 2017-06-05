@@ -21,12 +21,12 @@ def test_pods
     # Rapid uses both Quick and Nimble
     pod 'Quick', '~> 0.10.0'
     pod 'Nimble', '~> 5.0.0'
-    pod 'RapidTests', '1.0.2'
+    pod 'RapidTests', '1.0.3'
 end
 
 abstract_target 'Common' do
     # other common target pods here   
-    pod 'RapidA11y', '1.0.2'
+    pod 'RapidA11y', '1.0.3'
 
     # app target which picks up RapidA11y pod and any other common pods
     target 'Example' do 
