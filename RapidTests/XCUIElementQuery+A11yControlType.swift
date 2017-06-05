@@ -41,18 +41,14 @@ public extension A11yControlType {
             return app.datePickers
         case .image:
             return app.images
-        case .keyboard:
-            return app.keyboards
+        case .label:
+            return app.staticTexts
         case .navigationBar:
             return app.navigationBars
-        case .searchField:
-            return app.searchFields
-        case .secureTextField:
-            return app.secureTextFields
         case .scrollView:
             return app.scrollViews
-        case .staticText:
-            return app.staticTexts
+        case .searchField:
+            return app.searchFields
         case .`switch`:
             return app.switches
         case .tabBar:
