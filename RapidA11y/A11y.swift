@@ -42,16 +42,49 @@ public class A11y<Control, View> where Control: StringRawRepresentable, View: St
         var viewConfig = [A11yControlType: [UIA11yControl]]()
         for control in controls {
             switch control {
-                case is UIBarButtonItem:
-                    viewConfig = addControlType(.barButtonItem, newControl: control, toConfig: viewConfig)
-                case is UIButton:
-                    viewConfig = addControlType(.button, newControl: control, toConfig: viewConfig)
-                case is UITextField:
-                    viewConfig = addControlType(.textField, newControl: control, toConfig: viewConfig)
-                case is UICollectionView:
-                    viewConfig = addControlType(.collectionView, newControl: control, toConfig: viewConfig)
-                default:
-                    viewConfig = addControlType(.any, newControl: control, toConfig: viewConfig)
+            case is UIActivityIndicatorView:
+                viewConfig = addControlType(.activityIndicator, newControl: control, toConfig: viewConfig)
+            case is UIAlertController:
+                viewConfig = addControlType(.alert, newControl: control, toConfig: viewConfig)
+            case is UIBarButtonItem:
+                viewConfig = addControlType(.barButtonItem, newControl: control, toConfig: viewConfig)
+            case is UIButton:
+                viewConfig = addControlType(.button, newControl: control, toConfig: viewConfig)
+            case is UITableViewCell:
+            case is UICollectionViewCell:
+                viewConfig = addControlType(.cell, newControl: control, toConfig: viewConfig)
+            case is UICollectionView:
+                viewConfig = addControlType(.collectionView, newControl: control, toConfig: viewConfig)
+            case is UIDatePicker:
+                viewConfig = addControlType(.datePicker, newControl: control, toConfig: viewConfig)
+            case is UIImageView:
+                viewConfig = addControlType(.image, newControl: control, toConfig: viewConfig)
+            case is UILabel:
+                viewConfig = addControlType(.label, newControl: control, toConfig: viewConfig)
+            case is UINavigationBar:
+                viewConfig = addControlType(.navigationBar, newControl: control, toConfig: viewConfig)
+            case is UIScrollView:
+                viewConfig = addControlType(.scrollView, newControl: control, toConfig: viewConfig)
+            case is UISearchBar:
+                viewConfig = addControlType(.searchField, newControl: control, toConfig: viewConfig)
+            case is UISwitch:
+                viewConfig = addControlType(.`switch`, newControl: control, toConfig: viewConfig)
+            case is UITabBar:
+                viewConfig = addControlType(.tabBar, newControl: control, toConfig: viewConfig)
+            case is UITabBarItem:
+                viewConfig = addControlType(.tabBarItem, newControl: control, toConfig: viewConfig)
+            case is UITableView:
+                viewConfig = addControlType(.table, newControl: control, toConfig: viewConfig)
+            case is UITextView:
+                viewConfig = addControlType(.textView, newControl: control, toConfig: viewConfig)
+            case is UITextField:
+                viewConfig = addControlType(.textField, newControl: control, toConfig: viewConfig)
+            case is UIToolbar:
+                viewConfig = addControlType(.toolbar, newControl: control, toConfig: viewConfig)
+            case is UIWebView:
+                viewConfig = addControlType(.webView, newControl: control, toConfig: viewConfig)
+            default:
+                viewConfig = addControlType(.any, newControl: control, toConfig: viewConfig)
             }
         }
 

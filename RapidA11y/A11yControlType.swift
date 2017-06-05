@@ -27,12 +27,10 @@ public enum A11yControlType {
     case collectionView
     case datePicker
     case image
-    case keyboard
+    case label
     case navigationBar
     case scrollView
     case searchField
-    case secureTextField
-    case staticText
     case `switch`
     case tabBar
     case tabBarItem
