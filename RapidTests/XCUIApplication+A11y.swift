@@ -23,7 +23,6 @@ import RapidA11y
 import Foundation
 
 public extension XCUIApplication {
-    // MARK: - Core A11y to XCTestCase hooks
     /**
      * func uncheckedElementFor
      * checks the controlName and grabs the reference for that XCUIElement.
@@ -36,10 +35,10 @@ public extension XCUIApplication {
 
     /**
      * func elementFor
-     * input: A11yControlName -- control name desired to see if exists within current XCUIApplication A11y hiearchy
+     * input: NSObject -- control desired to see if it exists within current XCUIApplication accessibility hiearchy
      * output: XCUIElement -- A11y XCUIElement for the control.
      * Note: Test will wait for element to be present up to 30 seconds, and will also wait for the element to be tappable.
-     * Test will FAIL if element is not present and tappable after 30 second timeout (first 30 sec for present, then another 30 for tappable).
+     * Test will FAIL if element is not present and tappable after timeout (default:30).
      */
     @discardableResult
     public func elementFor(_ control: NSObject, andTimeout timeout: TimeInterval = 30) -> XCUIElement {
@@ -50,20 +49,36 @@ public extension XCUIApplication {
         return element
     }
 
+    /**
+     * func elementExistsFor
+     * input: 
+     *  NSObject -- control desired to check if it exists
+     *  TimeInterval -- timeout, default:10
+     * output:
+     *  Bool -- does the element exist or not
+     */
     @discardableResult
     public func elementExistsFor(_ control: NSObject, andTimeout timeout: TimeInterval = 10) -> Bool {
         let element = uncheckedElementFor(control)
         wait(withFailureAssertion: false, withTimeout: timeout, for: element.exists)
         return element.exists
     }
-    
+
+    /**
+     * func elementHittable
+     * input:
+     *  XCUIElement -- element desired to check if it exists
+     *  TimeInterval -- timeout, default:10
+     * output:
+     *  Bool -- can the test harness currently tap this element
+     */
     @discardableResult
     public func elementHittable(_ element: XCUIElement, andTimeout timeout: TimeInterval = 10) -> Bool {
         wait(withFailureAssertion: false, withTimeout: timeout, for: element.isHittable)
         return element.isHittable
     }
 
-    func waitForConditionOnQueueWithTimeout(_ timeout: TimeInterval, AndQueue queue: DispatchQueue, WithCondition  condition: @escaping (()->Bool)) -> Bool {
+    func wait(_ timeout: TimeInterval, andQueue queue: DispatchQueue, withCondition  condition: @escaping (()->Bool)) -> Bool {
         // Based on http://bou.io/CTTRunLoopRunUntil.html
         var fulfilled = false
 
@@ -117,10 +132,10 @@ public extension XCUIApplication {
     @nonobjc public func wait(withFailureAssertion assertIfFailure: Bool = true, withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping (Void) -> Bool) -> Bool? {
         let queue = DispatchQueue.global(qos: .userInteractive)
         if assertIfFailure {
-            XCTAssertTrue(waitForConditionOnQueueWithTimeout(timeout, AndQueue: queue){ condition() })
+            XCTAssertTrue(wait(timeout, andQueue: queue){ condition() })
             return nil
         } else {
-            return waitForConditionOnQueueWithTimeout(timeout, AndQueue: queue){ condition() }
+            return wait(timeout, andQueue: queue){ condition() }
         }
     }
 }

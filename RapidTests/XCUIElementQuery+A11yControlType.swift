@@ -22,7 +22,7 @@ import Foundation
 import XCTest
 import RapidA11y
 
-public extension A11yControlType {
+public extension accessibilityControlType {
     public func xcElementQueryForControl(_ app: XCUIApplication) -> XCUIElementQuery {
         switch self {
         case .activityIndicator:

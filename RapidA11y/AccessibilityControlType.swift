@@ -1,5 +1,5 @@
 //
-//  A11yControlType.swift
+//  AccessibilityControlType.swift
 //
 //  Copyright 2017 Creatubbles
 //
@@ -16,9 +16,10 @@
 //  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 //  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+
 import UIKit
 
-public enum A11yControlType {
+public enum accessibilityControlType {
     case activityIndicator
     case alert
     case any
@@ -44,7 +45,7 @@ public enum A11yControlType {
 }
 
 extension NSObject {
-    public var accessibilityControlInformation: (type: A11yControlType, traits: UIAccessibilityTraits) {
+    public var accessibilityControlInformation: (type: accessibilityControlType, traits: UIAccessibilityTraits) {
         switch self {
         case is UIActivityIndicatorView:
             return (.activityIndicator, UIAccessibilityTraitNone)

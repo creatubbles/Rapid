@@ -1,5 +1,5 @@
 //
-//  UIViewController+Rapid.swift
+//  NSObject+Rapid.swift
 //
 //  Copyright 2017 Creatubbles
 //
@@ -19,27 +19,10 @@
 
 import UIKit
 
-extension UIViewController: RapidIdentifiable {
-    public var viewAccessibilityIdentifier: String {
+extension NSObject: RapidControlIdentifiable {
+    public var accessibilityProperties: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String) {
         get {
-            return "\(type(of: self).description)_view_a11yID"
-        }
-    }
-
-    public var accessibilityControls: [NSObject] {
-        get {
-            return view.subviews
-        }
-    }
-
-    public var controlAccessibilityProperties: [NSObject: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String)] {
-        get {
-            var properties = [NSObject: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String)]()
-            accessibilityControls.forEach {
-                control in
-                properties[control] = control.accessibilityProperties
-            }
-            return properties
+            return (identifier: "\(description)_control_a11yID", rapidType: accessibilityControlInformation.type, traits: accessibilityControlInformation.traits, label: "\(description)_control_a11yLabel", hint: "\(description)_control_a11yHint")
         }
     }
 }
