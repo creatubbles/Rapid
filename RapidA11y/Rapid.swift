@@ -15,11 +15,15 @@
 //  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 //  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 //  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//
 
-public protocol RapidProtocol {
-    associatedtype C: StringRawRepresentable
-    associatedtype V: StringRawRepresentable
+import UIKit
 
-    func a11y() -> A11y<C, V>
+public protocol RapidIdentifiable {
+    var viewAccessibilityIdentifier: String { get }
+    var accessibilityControls: [NSObject] { get }
+    var controlAccessibilityProperties: [NSObject: (identifier: String, rapidType: A11yControlType, traits: UIAccessibilityTraits, label: String, hint: String)] { get }
+}
+
+public protocol RapidControlIdentifiable {
+    var accessibilityProperties: (identifier: String, rapidType: A11yControlType, traits: UIAccessibilityTraits, label: String, hint: String) { get }
 }

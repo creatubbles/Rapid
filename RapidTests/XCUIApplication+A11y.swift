@@ -29,9 +29,9 @@ public extension XCUIApplication {
      * checks the controlName and grabs the reference for that XCUIElement.
      * This is "unchecked", in that it has not been "waited" upon and is not necessarily there.
      */
-    func uncheckedElementFor(_ control: A11yBaseControl) -> XCUIElement {
-        let query = control.a11yControlType.xcElementQueryForControl(self)
-        return query[control.identifier]
+    func uncheckedElementFor(_ control: NSObject) -> XCUIElement {
+        let query = control.accessibilityControlInformation.type.xcElementQueryForControl(self)
+        return query[control.accessibilityProperties.identifier]
     }
 
     /**
@@ -42,7 +42,7 @@ public extension XCUIApplication {
      * Test will FAIL if element is not present and tappable after 30 second timeout (first 30 sec for present, then another 30 for tappable).
      */
     @discardableResult
-    public func elementFor(_ control: A11yBaseControl, andTimeout timeout: TimeInterval = 30) -> XCUIElement {
+    public func elementFor(_ control: NSObject, andTimeout timeout: TimeInterval = 30) -> XCUIElement {
         let element = uncheckedElementFor(control)
         expect(element).toNot(beNil())
         wait(withTimeout: timeout, for: element.isHittable)
@@ -51,7 +51,7 @@ public extension XCUIApplication {
     }
 
     @discardableResult
-    public func elementExistsFor(_ control: A11yBaseControl, andTimeout timeout: TimeInterval = 10) -> Bool {
+    public func elementExistsFor(_ control: NSObject, andTimeout timeout: TimeInterval = 10) -> Bool {
         let element = uncheckedElementFor(control)
         wait(withFailureAssertion: false, withTimeout: timeout, for: element.exists)
         return element.exists

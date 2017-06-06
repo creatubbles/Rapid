@@ -24,22 +24,22 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'RapidDemo' do
-  pod 'RapidA11y', :git => 'git@github.com:creatubbles/Rapid.git', :branch => 'master'
+  pod 'RapidA11y'
 end
   
 target 'RapidDemoTests' do
-  pod 'RapidTests', :git => 'git@github.com:creatubbles/Rapid.git', :branch => 'master'
+  pod 'RapidTests'
 end
 
 target 'RapidDemoUITests' do
-  pod 'RapidTests', :git => 'git@github.com:creatubbles/Rapid.git', :branch => 'master'
+  pod 'RapidTests'
 end
 
 target 'RapidA11y' do
 end
 
 target 'RapidTests' do
-  pod 'RapidA11y', :git => 'git@github.com:creatubbles/Rapid.git', :branch => 'master'
+  pod 'RapidA11y'
   pod 'Nimble', '5.0.0'
   pod 'Quick', '0.10.0'
 end

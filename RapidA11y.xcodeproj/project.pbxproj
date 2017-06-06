@@ -17,14 +17,10 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
+		3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */; };
 		78FE1BCA7F414148BFFA524E /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32652DF3F018C2B8344192EC /* Pods_RapidTests.framework */; };
 		902ABFD51F1D21AC4BDF445D /* Pods_RapidDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772F65CCE04F9141AAB23C4D /* Pods_RapidDemoTests.framework */; };
-		B20901821E8867BD0091BE07 /* A11y.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901791E8867BD0091BE07 /* A11y.swift */; };
-		B20901831E8867BD0091BE07 /* A11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017A1E8867BD0091BE07 /* A11yControl.swift */; };
 		B20901841E8867BD0091BE07 /* A11yControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017B1E8867BD0091BE07 /* A11yControlType.swift */; };
-		B20901851E8867BD0091BE07 /* A11yView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017C1E8867BD0091BE07 /* A11yView.swift */; };
-		B20901861E8867BD0091BE07 /* A11yViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017D1E8867BD0091BE07 /* A11yViewControl.swift */; };
-		B20901871E8867BD0091BE07 /* BaseA11yControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */; };
 		B20901891E8867BD0091BE07 /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = B20901801E8867BD0091BE07 /* Rapid.h */; };
 		B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901811E8867BD0091BE07 /* Rapid.swift */; };
 		B20901941E8867C50091BE07 /* RapidTests.h in Headers */ = {isa = PBXBuildFile; fileRef = B20901921E8867C50091BE07 /* RapidTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,17 +92,13 @@
 		3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDemoUITests.swift; sourceTree = "<group>"; };
 		3F115DFB1EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6D454B1EA8DD46003DA7CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rapid.swift"; sourceTree = "<group>"; };
 		43DC14F756572ECA3232F1EF /* Pods_RapidDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		772F65CCE04F9141AAB23C4D /* Pods_RapidDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F318C6CE819360F93336FB /* Pods-RapidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RapidTests/Pods-RapidTests.release.xcconfig"; sourceTree = "<group>"; };
 		B209016E1E88678B0091BE07 /* RapidA11y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RapidA11y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20901721E88678B0091BE07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B20901791E8867BD0091BE07 /* A11y.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11y.swift; sourceTree = "<group>"; };
-		B209017A1E8867BD0091BE07 /* A11yControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yControl.swift; sourceTree = "<group>"; };
 		B209017B1E8867BD0091BE07 /* A11yControlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yControlType.swift; sourceTree = "<group>"; };
-		B209017C1E8867BD0091BE07 /* A11yView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yView.swift; sourceTree = "<group>"; };
-		B209017D1E8867BD0091BE07 /* A11yViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A11yViewControl.swift; sourceTree = "<group>"; };
-		B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseA11yControl.swift; sourceTree = "<group>"; };
 		B20901801E8867BD0091BE07 /* Rapid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rapid.h; sourceTree = "<group>"; };
 		B20901811E8867BD0091BE07 /* Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rapid.swift; sourceTree = "<group>"; };
 		B20901901E8867C50091BE07 /* RapidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RapidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,15 +253,11 @@
 		B20901701E88678B0091BE07 /* RapidA11y */ = {
 			isa = PBXGroup;
 			children = (
-				B20901791E8867BD0091BE07 /* A11y.swift */,
-				B209017A1E8867BD0091BE07 /* A11yControl.swift */,
 				B209017B1E8867BD0091BE07 /* A11yControlType.swift */,
-				B209017C1E8867BD0091BE07 /* A11yView.swift */,
-				B209017D1E8867BD0091BE07 /* A11yViewControl.swift */,
-				B209017E1E8867BD0091BE07 /* BaseA11yControl.swift */,
 				B20901801E8867BD0091BE07 /* Rapid.h */,
 				B20901811E8867BD0091BE07 /* Rapid.swift */,
 				B20901721E88678B0091BE07 /* Info.plist */,
+				3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */,
 			);
 			path = RapidA11y;
 			sourceTree = "<group>";
@@ -744,13 +732,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20901851E8867BD0091BE07 /* A11yView.swift in Sources */,
-				B20901861E8867BD0091BE07 /* A11yViewControl.swift in Sources */,
-				B20901871E8867BD0091BE07 /* BaseA11yControl.swift in Sources */,
+				3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */,
 				B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */,
 				B20901841E8867BD0091BE07 /* A11yControlType.swift in Sources */,
-				B20901821E8867BD0091BE07 /* A11y.swift in Sources */,
-				B20901831E8867BD0091BE07 /* A11yControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,7 +1001,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RapidA11y/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cbn.RapidA11y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1040,7 +1024,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RapidA11y/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cbn.RapidA11y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1070,7 +1054,7 @@
 				);
 				INFOPLIST_FILE = RapidTests/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cbn.RapidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1101,7 +1085,7 @@
 				);
 				INFOPLIST_FILE = RapidTests/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cbn.RapidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
