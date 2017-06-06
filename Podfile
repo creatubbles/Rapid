@@ -26,10 +26,6 @@ use_frameworks!
 target 'RapidDemo' do
   pod 'RapidA11y'
 end
-  
-target 'RapidDemoTests' do
-  pod 'RapidTests'
-end
 
 target 'RapidDemoUITests' do
   pod 'RapidTests'

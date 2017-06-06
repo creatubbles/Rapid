@@ -15,12 +15,10 @@
 		3F115DDF1EA8D5C9003537E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DDD1EA8D5C9003537E8 /* Main.storyboard */; };
 		3F115DE11EA8D5C9003537E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE01EA8D5C9003537E8 /* Assets.xcassets */; };
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
-		3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
 		3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */; };
 		3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */; };
 		78FE1BCA7F414148BFFA524E /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32652DF3F018C2B8344192EC /* Pods_RapidTests.framework */; };
-		902ABFD51F1D21AC4BDF445D /* Pods_RapidDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772F65CCE04F9141AAB23C4D /* Pods_RapidDemoTests.framework */; };
 		B20901841E8867BD0091BE07 /* AccessibilityControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017B1E8867BD0091BE07 /* AccessibilityControlType.swift */; };
 		B20901891E8867BD0091BE07 /* Rapid.h in Headers */ = {isa = PBXBuildFile; fileRef = B20901801E8867BD0091BE07 /* Rapid.h */; };
 		B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20901811E8867BD0091BE07 /* Rapid.swift */; };
@@ -33,13 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F115DEB1EA8D5C9003537E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B20901651E88678A0091BE07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F115DD61EA8D5C9003537E8;
-			remoteInfo = RapidDemo;
-		};
 		3F115DF61EA8D5C9003537E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B20901651E88678A0091BE07 /* Project object */;
@@ -53,13 +44,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B209016D1E88678A0091BE07;
 			remoteInfo = RapidA11y;
-		};
-		3F6D45511EA8DD60003DA7CF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B20901651E88678A0091BE07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B209018F1E8867C50091BE07;
-			remoteInfo = RapidTests;
 		};
 		3F6D45531EA8DD64003DA7CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -86,9 +70,6 @@
 		3F115DE01EA8D5C9003537E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F115DE31EA8D5C9003537E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F115DE51EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F115DEA1EA8D5C9003537E8 /* RapidDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDemoTests.swift; sourceTree = "<group>"; };
-		3F115DF01EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F115DF51EA8D5C9003537E8 /* RapidDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDemoUITests.swift; sourceTree = "<group>"; };
 		3F115DFB1EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,14 +103,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8EF78A1D460612F4D7566B9 /* Pods_RapidDemo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F115DE71EA8D5C9003537E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				902ABFD51F1D21AC4BDF445D /* Pods_RapidDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,15 +164,6 @@
 			path = RapidDemo;
 			sourceTree = "<group>";
 		};
-		3F115DED1EA8D5C9003537E8 /* RapidDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				3F115DEE1EA8D5C9003537E8 /* RapidDemoTests.swift */,
-				3F115DF01EA8D5C9003537E8 /* Info.plist */,
-			);
-			path = RapidDemoTests;
-			sourceTree = "<group>";
-		};
 		3F115DF81EA8D5C9003537E8 /* RapidDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +196,6 @@
 				B20901701E88678B0091BE07 /* RapidA11y */,
 				B20901911E8867C50091BE07 /* RapidTests */,
 				3F115DD81EA8D5C9003537E8 /* RapidDemo */,
-				3F115DED1EA8D5C9003537E8 /* RapidDemoTests */,
 				3F115DF81EA8D5C9003537E8 /* RapidDemoUITests */,
 				B209016F1E88678B0091BE07 /* Products */,
 				124F1D668EB0A7C60AA5564D /* Frameworks */,
@@ -246,7 +209,6 @@
 				B209016E1E88678B0091BE07 /* RapidA11y.framework */,
 				B20901901E8867C50091BE07 /* RapidTests.framework */,
 				3F115DD71EA8D5C9003537E8 /* RapidDemo.app */,
-				3F115DEA1EA8D5C9003537E8 /* RapidDemoTests.xctest */,
 				3F115DF51EA8D5C9003537E8 /* RapidDemoUITests.xctest */,
 			);
 			name = Products;
@@ -318,28 +280,6 @@
 			productName = RapidDemo;
 			productReference = 3F115DD71EA8D5C9003537E8 /* RapidDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3F115DE91EA8D5C9003537E8 /* RapidDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F115DFF1EA8D5C9003537E8 /* Build configuration list for PBXNativeTarget "RapidDemoTests" */;
-			buildPhases = (
-				A858C8BAA9E0EE1DF29A5413 /* [CP] Check Pods Manifest.lock */,
-				3F115DE61EA8D5C9003537E8 /* Sources */,
-				3F115DE71EA8D5C9003537E8 /* Frameworks */,
-				3F115DE81EA8D5C9003537E8 /* Resources */,
-				D1AF4FE6CA9CD636BEAEE2E7 /* [CP] Embed Pods Frameworks */,
-				3C71832D65057BDE808FD5BB /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F115DEC1EA8D5C9003537E8 /* PBXTargetDependency */,
-				3F6D45521EA8DD60003DA7CF /* PBXTargetDependency */,
-			);
-			name = RapidDemoTests;
-			productName = RapidDemoTests;
-			productReference = 3F115DEA1EA8D5C9003537E8 /* RapidDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3F115DF41EA8D5C9003537E8 /* RapidDemoUITests */ = {
 			isa = PBXNativeTarget;
@@ -418,12 +358,6 @@
 						DevelopmentTeam = GFEDRTTUSS;
 						ProvisioningStyle = Automatic;
 					};
-					3F115DE91EA8D5C9003537E8 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GFEDRTTUSS;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 3F115DD61EA8D5C9003537E8;
-					};
 					3F115DF41EA8D5C9003537E8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GFEDRTTUSS;
@@ -460,7 +394,6 @@
 				B209016D1E88678A0091BE07 /* RapidA11y */,
 				B209018F1E8867C50091BE07 /* RapidTests */,
 				3F115DD61EA8D5C9003537E8 /* RapidDemo */,
-				3F115DE91EA8D5C9003537E8 /* RapidDemoTests */,
 				3F115DF41EA8D5C9003537E8 /* RapidDemoUITests */,
 			);
 		};
@@ -474,13 +407,6 @@
 				3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */,
 				3F115DE11EA8D5C9003537E8 /* Assets.xcassets in Resources */,
 				3F115DDF1EA8D5C9003537E8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F115DE81EA8D5C9003537E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,21 +462,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidDemo/Pods-RapidDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C71832D65057BDE808FD5BB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidDemoTests/Pods-RapidDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		57B358F9300AD530076C36AE /* [CP] Check Pods Manifest.lock */ = {
@@ -613,21 +524,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A858C8BAA9E0EE1DF29A5413 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		B82E0091AAC4705B23A5DF81 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -656,21 +552,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidDemo/Pods-RapidDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1AF4FE6CA9CD636BEAEE2E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RapidDemoTests/Pods-RapidDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D471E95866E545294507E83C /* [CP] Copy Pods Resources */ = {
@@ -715,14 +596,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F115DE61EA8D5C9003537E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F115DEF1EA8D5C9003537E8 /* RapidDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3F115DF11EA8D5C9003537E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -754,11 +627,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F115DEC1EA8D5C9003537E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F115DD61EA8D5C9003537E8 /* RapidDemo */;
-			targetProxy = 3F115DEB1EA8D5C9003537E8 /* PBXContainerItemProxy */;
-		};
 		3F115DF71EA8D5C9003537E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3F115DD61EA8D5C9003537E8 /* RapidDemo */;
@@ -768,11 +636,6 @@
 			isa = PBXTargetDependency;
 			target = B209016D1E88678A0091BE07 /* RapidA11y */;
 			targetProxy = 3F6D454F1EA8DD5C003DA7CF /* PBXContainerItemProxy */;
-		};
-		3F6D45521EA8DD60003DA7CF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B209018F1E8867C50091BE07 /* RapidTests */;
-			targetProxy = 3F6D45511EA8DD60003DA7CF /* PBXContainerItemProxy */;
 		};
 		3F6D45541EA8DD64003DA7CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -828,38 +691,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ctb.RapidDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		3F115E001EA8D5C9003537E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E012BA522F92607C078387A /* Pods-RapidDemoTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = GFEDRTTUSS;
-				INFOPLIST_FILE = RapidDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ctb.RapidDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RapidDemo.app/RapidDemo";
-			};
-			name = Debug;
-		};
-		3F115E011EA8D5C9003537E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12AAB79AC37EC188844304C5 /* Pods-RapidDemoTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = GFEDRTTUSS;
-				INFOPLIST_FILE = RapidDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ctb.RapidDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RapidDemo.app/RapidDemo";
 			};
 			name = Release;
 		};
@@ -1106,15 +937,6 @@
 			buildConfigurations = (
 				3F115DFD1EA8D5C9003537E8 /* Debug */,
 				3F115DFE1EA8D5C9003537E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F115DFF1EA8D5C9003537E8 /* Build configuration list for PBXNativeTarget "RapidDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F115E001EA8D5C9003537E8 /* Debug */,
-				3F115E011EA8D5C9003537E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
