@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidTests'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'UI testing framework build on top of Quick & Nimble.'
   s.description      = 'RapidTests is a UI testing framework built to ease the creation and
   maintenance of UI tests in a complex iOS application. This framework is used only in
@@ -32,7 +32,7 @@ THE SOFTWARE.
   s.author           = { 'coolbnjmn' => 'benjamin@creatubbles.com' }
   s.source           = { :git => 'https://github.com/creatubbles/Rapid.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'RapidTests/*.*'
   s.frameworks = 'XCTest'
   s.dependency 'Quick', '~> 0.10.0'

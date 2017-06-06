@@ -52,8 +52,33 @@ Once `Podfile` setup for your project, run `$ pod install` in the directory of y
 SUPER SIMPLE 3 STEP PROCESS:
 
 1) Install pod - accessibility pod for application targets, test pod for test targets
-2) Override `accessibilityProperties` in controls and `accessibilityControls` & `viewAccessibilityIdentifier` in views
+2) Override `accessibilityProperties` in controls and `accessibilityControls` in views, and call `applyAccessibility()` in `viewDidLoad()`
 3) Get VoiceOver for free and easy testability of your code immediately!
+
+Example simplicity (fully accessible view controller with colored buttons):
+```
+class ViewController: UIViewController {
+    @IBOutlet weak var buttonA: UIButton!
+    @IBOutlet weak var buttonB: UIButton!
+    @IBOutlet weak var buttonC: UIButton!
+    @IBOutlet weak var buttonD: UIButton!
+
+    public override var accessibilityControls: Set<NSObject> {
+        get {
+            buttonA.accessibilityProperties = (identifier: "Button A", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The orange one", hint: "It is square")
+            buttonB.accessibilityProperties = (identifier: "Button B", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The blue one", hint: "It is square")
+            buttonC.accessibilityProperties = (identifier: "Button C", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The green one", hint: "It is square")
+            buttonD.accessibilityProperties = (identifier: "Button D", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The purple one", hint: "It is square")
+            return Set<NSObject>(arrayLiteral: buttonA, buttonB, buttonC, buttonD)
+        }
+    }
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        applyAccessibility()
+    }
+}
+```
 
 ## License
 #### MIT License

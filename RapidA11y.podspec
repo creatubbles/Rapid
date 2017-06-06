@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidA11y'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'Accessibility framework build to interact with RapidTests, a UI testing framework.'
   s.description      = 'RapidA11y is an accessibility framework built to ease the addition of accessibility to
   an iOS application. This enables both easy VoiceOver implementations and integration into RapidTests, a partner
@@ -31,6 +31,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   s.author           = { 'coolbnjmn' => 'benjamin@creatubbles.com' }
   s.source           = { :git => 'https://github.com/creatubbles/Rapid.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'RapidA11y/*.*'
 end

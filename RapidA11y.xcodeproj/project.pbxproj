@@ -17,6 +17,10 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
 		3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */; };
+		3FA621551EE6FC2D00FFDEF0 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621531EE6FC2D00FFDEF0 /* CHANGELOG.md */; };
+		3FA621561EE6FC2D00FFDEF0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621541EE6FC2D00FFDEF0 /* README.md */; };
+		3FA621591EE6FD0D00FFDEF0 /* RapidA11y.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621571EE6FD0D00FFDEF0 /* RapidA11y.podspec */; };
+		3FA6215A1EE6FD0D00FFDEF0 /* RapidTests.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621581EE6FD0D00FFDEF0 /* RapidTests.podspec */; };
 		3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */; };
 		78FE1BCA7F414148BFFA524E /* Pods_RapidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32652DF3F018C2B8344192EC /* Pods_RapidTests.framework */; };
 		B20901841E8867BD0091BE07 /* AccessibilityControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B209017B1E8867BD0091BE07 /* AccessibilityControlType.swift */; };
@@ -75,6 +79,10 @@
 		3F115DFB1EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6D454B1EA8DD46003DA7CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rapid.swift"; sourceTree = "<group>"; };
+		3FA621531EE6FC2D00FFDEF0 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		3FA621541EE6FC2D00FFDEF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FA621571EE6FD0D00FFDEF0 /* RapidA11y.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RapidA11y.podspec; sourceTree = "<group>"; };
+		3FA621581EE6FD0D00FFDEF0 /* RapidTests.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RapidTests.podspec; sourceTree = "<group>"; };
 		3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rapid.swift"; sourceTree = "<group>"; };
 		43DC14F756572ECA3232F1EF /* Pods_RapidDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		772F65CCE04F9141AAB23C4D /* Pods_RapidDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapidDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +201,10 @@
 		B20901641E88678A0091BE07 = {
 			isa = PBXGroup;
 			children = (
+				3FA621571EE6FD0D00FFDEF0 /* RapidA11y.podspec */,
+				3FA621581EE6FD0D00FFDEF0 /* RapidTests.podspec */,
+				3FA621531EE6FC2D00FFDEF0 /* CHANGELOG.md */,
+				3FA621541EE6FC2D00FFDEF0 /* README.md */,
 				B20901701E88678B0091BE07 /* RapidA11y */,
 				B20901911E8867C50091BE07 /* RapidTests */,
 				3F115DD81EA8D5C9003537E8 /* RapidDemo */,
@@ -421,6 +433,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA621591EE6FD0D00FFDEF0 /* RapidA11y.podspec in Resources */,
+				3FA6215A1EE6FD0D00FFDEF0 /* RapidTests.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,7 +622,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA621561EE6FC2D00FFDEF0 /* README.md in Sources */,
 				3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */,
+				3FA621551EE6FC2D00FFDEF0 /* CHANGELOG.md in Sources */,
 				B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */,
 				3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */,
 				B20901841E8867BD0091BE07 /* AccessibilityControlType.swift in Sources */,

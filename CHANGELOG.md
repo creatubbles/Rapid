@@ -2,6 +2,12 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.6:
+- Huge internal changes to RapidA11y to greatly simplify it's integration
+- Accompanying deletion of README steps which are now irrelevant
+- Bringing demo app into the picture to show off how to use RapidA11y
+- WWDC 2017! Dropping iOS 9 support preemptively, iOS 10+ only for Rapid.
+
 ##### v 1.0.5:
 - Re-insert `secureTextField` control type query helper
 
