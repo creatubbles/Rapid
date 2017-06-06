@@ -23,6 +23,38 @@ extension NSObject: RapidControlIdentifiable {
     public var accessibilityProperties: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String) {
         get {
             return (identifier: "\(description)_control_a11yID", rapidType: accessibilityControlInformation.type, traits: accessibilityControlInformation.traits, label: "\(description)_control_a11yLabel", hint: "\(description)_control_a11yHint")
+        } set {
+            // no-op
         }
+    }
+
+    public func applyProperties() {
+        // overriden in all classes implementing UIAccessibilityIdentificationProtocol for ID property
+        accessibilityHint = accessibilityProperties.hint
+        accessibilityLabel = accessibilityProperties.label
+        accessibilityTraits = accessibilityProperties.traits
+    }
+}
+
+
+
+extension UIView {
+    public override func applyProperties() {
+        super.applyProperties()
+        accessibilityIdentifier = accessibilityProperties.identifier
+    }
+}
+
+extension UIBarItem {
+    public override func applyProperties() {
+        super.applyProperties()
+        accessibilityIdentifier = accessibilityProperties.identifier
+    }
+}
+
+extension UIImage {
+    public override func applyProperties() {
+        super.applyProperties()
+        accessibilityIdentifier = accessibilityProperties.identifier
     }
 }

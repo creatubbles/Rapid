@@ -20,26 +20,25 @@
 import UIKit
 
 extension UIViewController: RapidIdentifiable {
-    public var viewAccessibilityIdentifier: String {
+    public typealias Control = NSObject
+
+    open var rapidAccessibilityIdentifier: String {
         get {
             return "\(type(of: self).description)_view_a11yID"
         }
     }
 
-    public var accessibilityControls: [NSObject] {
+    open var accessibilityControls: Set<Control> {
         get {
-            return view.subviews
+            // Override this in your view controllers to specify controls and their properties.
+            return Set<Control>()
         }
     }
 
-    public var controlAccessibilityProperties: [NSObject: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String)] {
-        get {
-            var properties = [NSObject: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String)]()
-            accessibilityControls.forEach {
-                control in
-                properties[control] = control.accessibilityProperties
-            }
-            return properties
+    public func applyAccessibility() {
+        _ = accessibilityControls.map {
+            control in
+            control.applyProperties()
         }
     }
 }
