@@ -57,7 +57,7 @@ public func ==(lhs: RapidControlInformation, rhs: RapidControlInformation) -> Bo
     return lhs.identifier == rhs.identifier
 }
 
-public protocol Accessible {
+public protocol RapidAccessible {
     static func rapidControlsInformation() -> Array<RapidControlInformation>
 }
 

@@ -22,19 +22,18 @@
 import UIKit
 import RapidA11y
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RapidAccessible {
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
 
-    public override var accessibilityControls: Set<NSObject> {
-        get {
-            buttonA.accessibilityProperties = (identifier: "Button A", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The orange one", hint: "It is square")
-            buttonB.accessibilityProperties = (identifier: "Button B", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The blue one", hint: "It is square")
-            buttonC.accessibilityProperties = (identifier: "Button C", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The green one", hint: "It is square")
-            buttonD.accessibilityProperties = (identifier: "Button D", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The purple one", hint: "It is square")
-            return Set<NSObject>(arrayLiteral: buttonA, buttonB, buttonC, buttonD)
+    static func rapidControlsInformation() -> Array<RapidControlInformation> {
+        var buttonInfo = UIButton.accessibilityProperties
+        return Array(0...4).map {
+            index in
+            buttonInfo.index = index
+            return buttonInfo
         }
     }
 

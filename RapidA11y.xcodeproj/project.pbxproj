@@ -17,8 +17,6 @@
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
 		3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */; };
-		3FA621551EE6FC2D00FFDEF0 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621531EE6FC2D00FFDEF0 /* CHANGELOG.md */; };
-		3FA621561EE6FC2D00FFDEF0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621541EE6FC2D00FFDEF0 /* README.md */; };
 		3FA621591EE6FD0D00FFDEF0 /* RapidA11y.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621571EE6FD0D00FFDEF0 /* RapidA11y.podspec */; };
 		3FA6215A1EE6FD0D00FFDEF0 /* RapidTests.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621581EE6FD0D00FFDEF0 /* RapidTests.podspec */; };
 		3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */; };
@@ -622,9 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA621561EE6FC2D00FFDEF0 /* README.md in Sources */,
 				3FCFBEC31EE6D0D900A6FAFE /* UIViewController+Rapid.swift in Sources */,
-				3FA621551EE6FC2D00FFDEF0 /* CHANGELOG.md in Sources */,
 				B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */,
 				3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */,
 				B20901841E8867BD0091BE07 /* AccessibilityControlType.swift in Sources */,

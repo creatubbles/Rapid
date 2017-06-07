@@ -30,7 +30,7 @@ extension UIViewController: RapidIdentifiable {
     }
 
     public func applyAccessibility() {
-        guard let accessibleSelf = self as? Accessible else {
+        guard let accessibleSelf = self as? RapidAccessible else {
             return
         }
         let selfType = type(of: accessibleSelf)
