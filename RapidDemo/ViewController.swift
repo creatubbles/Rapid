@@ -30,10 +30,16 @@ class ViewController: UIViewController, RapidAccessible {
 
     static func rapidControlsInformation() -> Array<RapidControlInformation> {
         var buttonInfo = UIButton.accessibilityProperties
-        return Array(0...4).map {
+        return Array(0...3).map {
             index in
             buttonInfo.index = index
             return buttonInfo
+        }
+    }
+
+    public override var accessibilityControls: Array<NSObject> {
+        get {
+            return [buttonA, buttonB, buttonC, buttonD]
         }
     }
 

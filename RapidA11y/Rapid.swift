@@ -29,13 +29,13 @@ public struct RapidControlInformation: Hashable {
 
     public var label: String {
         get {
-            return "\(type(of: self))_control_a11yLabel"
+            return "\(type)_\(index)_control_a11yLabel"
         }
     }
 
     public var hint: String {
         get {
-            return "\(type(of: self))_control_a11yHint"
+            return "\(type)_\(index)_control_a11yHint"
         }
     }
 
