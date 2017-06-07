@@ -18,45 +18,6 @@
 
 import UIKit
 
-public struct RapidControlInformation: Hashable {
-    public static let viewIdentifierSuffix: String = "_view_a11yID"
-
-    public var identifier: String {
-        get {
-            return "\(type)_\(index)_control_a11yID"
-        }
-    }
-
-    public var label: String {
-        get {
-            return "\(type)_\(index)_control_a11yLabel"
-        }
-    }
-
-    public var hint: String {
-        get {
-            return "\(type)_\(index)_control_a11yHint"
-        }
-    }
-
-    public var index: Int = 0
-    public var rapidType: accessibilityControlType = .any
-    public var traits: UIAccessibilityTraits = UIAccessibilityTraitNone
-    public var type: NSObject.Type
-
-    public var hashValue: Int {
-        return identifier.hash
-    }
-
-    init(type: NSObject.Type) {
-        self.type = type
-    }
-}
-
-public func ==(lhs: RapidControlInformation, rhs: RapidControlInformation) -> Bool {
-    return lhs.identifier == rhs.identifier
-}
-
 public protocol RapidAccessible {
     static func rapidControlsInformation() -> Array<RapidControlInformation>
 }
@@ -68,6 +29,31 @@ public protocol RapidIdentifiable {
 }
 
 public protocol RapidControlIdentifiable: Hashable {
-    static var accessibilityProperties: RapidControlInformation { get set }
+    static var accessibilityProperties: RapidControlInformation { get }
     func applyProperties(_ controlTag: Int, classOverride controlType: NSObject.Type?) -> RapidControlInformation
+}
+
+public enum accessibilityControlType {
+    case activityIndicator
+    case alert
+    case any
+    case barButtonItem
+    case button
+    case cell
+    case collectionView
+    case datePicker
+    case image
+    case label
+    case navigationBar
+    case scrollView
+    case searchField
+    case secureTextField
+    case `switch`
+    case tabBar
+    case tabBarItem
+    case table
+    case textView
+    case textField
+    case toolbar
+    case webView
 }

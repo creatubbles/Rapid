@@ -13,7 +13,7 @@ Inspired heavily by [Quick](https://github.com/Quick/quick), and currently using
 Sample `Podfile`:
 
 ```
-platform :ios, '9.0'
+platform :ios, '10.0'
 use_frameworks!
 
 def test_pods
@@ -21,12 +21,12 @@ def test_pods
     # Rapid uses both Quick and Nimble
     pod 'Quick', '~> 0.10.0'
     pod 'Nimble', '~> 5.0.0'
-    pod 'RapidTests', '1.0.5'
+    pod 'RapidTests', '1.0.7'
 end
 
 abstract_target 'Common' do
     # other common target pods here   
-    pod 'RapidA11y', '1.0.5'
+    pod 'RapidA11y', '1.0.7'
 
     # app target which picks up RapidA11y pod and any other common pods
     target 'Example' do 
@@ -49,27 +49,35 @@ Once `Podfile` setup for your project, run `$ pod install` in the directory of y
 
 ## Setup
 
-SUPER SIMPLE 3 STEP PROCESS:
+SUPER SIMPLE 5 STEP PROCESS:
 
 1) Install pod - accessibility pod for application targets, test pod for test targets
-2) Override `accessibilityProperties` in controls and `accessibilityControls` in views, and call `applyAccessibility()` in `viewDidLoad()`
-3) Get VoiceOver for free and easy testability of your code immediately!
+2) Implement the `RapidAccessible` protocol for views you want Rapid to have access to, and don't forget to
+specify `accessibilityControls` defined by the `RapidIdentifiable` protocol. 
+3) Call `applyAccessibility()` in `viewDidLoad()` of view controllers implementing `RapidAccessible`.
+4) Get VoiceOver for free and easy testability of your code immediately! :bulb::unlock:
+5) Profit :tada::tada::tada:
 
 Example simplicity (fully accessible view controller with colored buttons):
 ```
-class ViewController: UIViewController {
+class ViewController: UIViewController, RapidAccessible {
     @IBOutlet weak var buttonA: UIButton!
     @IBOutlet weak var buttonB: UIButton!
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
 
-    public override var accessibilityControls: Set<NSObject> {
+    static func rapidControlsInformation() -> Array<RapidControlInformation> {
+        var buttonInfo = UIButton.accessibilityProperties
+        return Array(0...3).map {
+            index in
+            buttonInfo.index = index
+            return buttonInfo
+        }
+    }
+
+    public override var accessibilityControls: Array<NSObject> {
         get {
-            buttonA.accessibilityProperties = (identifier: "Button A", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The orange one", hint: "It is square")
-            buttonB.accessibilityProperties = (identifier: "Button B", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The blue one", hint: "It is square")
-            buttonC.accessibilityProperties = (identifier: "Button C", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The green one", hint: "It is square")
-            buttonD.accessibilityProperties = (identifier: "Button D", rapidType: .button, traits: UIAccessibilityTraitButton, label: "The purple one", hint: "It is square")
-            return Set<NSObject>(arrayLiteral: buttonA, buttonB, buttonC, buttonD)
+            return [buttonA, buttonB, buttonC, buttonD]
         }
     }
 
@@ -78,6 +86,7 @@ class ViewController: UIViewController {
         applyAccessibility()
     }
 }
+
 ```
 
 ## License

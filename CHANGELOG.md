@@ -2,6 +2,11 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.7:
+- Continuing rapid improvements across the board
+- Sample integration with Creatubbles project revealed
+several places to improve, and these have been greatly enhanced.
+
 ##### v 1.0.6:
 - Huge internal changes to RapidA11y to greatly simplify it's integration
 - Accompanying deletion of README steps which are now irrelevant

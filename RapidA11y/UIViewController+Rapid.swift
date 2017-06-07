@@ -24,11 +24,13 @@ extension UIViewController: RapidIdentifiable {
 
     open var accessibilityControls: Array<Control> {
         get {
-            // Override this in your view controllers to specify controls and their properties.
+            // Override this in your view controllers
+            // put actual references to UIControls in your views
             return []
         }
     }
 
+    // Make sure to call this in `viewDidLoad()` after your UI is set up
     public func applyAccessibility() {
         guard let accessibleSelf = self as? RapidAccessible else {
             return
@@ -37,7 +39,7 @@ extension UIViewController: RapidIdentifiable {
         view.accessibilityIdentifier = "\(selfType)\(RapidControlInformation.viewIdentifierSuffix)"
         let controlsInformation: [RapidControlInformation] = selfType.rapidControlsInformation()
         guard controlsInformation.count == accessibilityControls.count else {
-            // mismatch, fail
+            assertionFailure("Mismatch on number of controls given to Rapid")
             return
         }
         _ = accessibilityControls.enumerated().map {
