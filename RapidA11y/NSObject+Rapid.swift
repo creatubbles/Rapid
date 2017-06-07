@@ -20,41 +20,33 @@
 import UIKit
 
 extension NSObject: RapidControlIdentifiable {
-    public var accessibilityProperties: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String) {
+    public static var accessibilityProperties: RapidControlInformation {
         get {
-            return (identifier: "\(description)_control_a11yID", rapidType: accessibilityControlInformation.type, traits: accessibilityControlInformation.traits, label: "\(description)_control_a11yLabel", hint: "\(description)_control_a11yHint")
-        } set {
+            return RapidControlInformation(type: self)
+        }
+        set {
             // no-op
         }
     }
 
-    public func applyProperties() {
+    @discardableResult
+    public func applyProperties(_ controlTag: Int = 0, classOverride controlType: NSObject.Type? = nil) -> RapidControlInformation {
         // overriden in all classes implementing UIAccessibilityIdentificationProtocol for ID property
-        accessibilityHint = accessibilityProperties.hint
-        accessibilityLabel = accessibilityProperties.label
-        accessibilityTraits = accessibilityProperties.traits
-    }
-}
+        let selfType = controlType ?? type(of: self)
+        var properties = selfType.accessibilityProperties
+        properties.index = controlTag
+        properties.type = selfType
+        if let identifiableViewSelf = self as? UIView {
+            identifiableViewSelf.accessibilityIdentifier = properties.identifier
+        } else if let identifiableBarItemSelf = self as? UIBarItem {
+            identifiableBarItemSelf.accessibilityIdentifier = properties.identifier
+        } else if let identifiableImageSelf = self as? UIImage {
+            identifiableImageSelf.accessibilityIdentifier = properties.identifier
+        }
 
-
-
-extension UIView {
-    public override func applyProperties() {
-        super.applyProperties()
-        accessibilityIdentifier = accessibilityProperties.identifier
-    }
-}
-
-extension UIBarItem {
-    public override func applyProperties() {
-        super.applyProperties()
-        accessibilityIdentifier = accessibilityProperties.identifier
-    }
-}
-
-extension UIImage {
-    public override func applyProperties() {
-        super.applyProperties()
-        accessibilityIdentifier = accessibilityProperties.identifier
+        accessibilityHint = properties.hint
+        accessibilityLabel = properties.label
+        accessibilityTraits = properties.traits
+        return properties
     }
 }

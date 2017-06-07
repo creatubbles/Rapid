@@ -18,39 +18,56 @@
 
 import UIKit
 
-/**
- * protocol RapidIdentifiable
- * 
- * Use:
- * Implement on view controllers that contain 1+ controls
- *
- * Info:
- * Define your accessibility views as compositions of controls
- * Implement this protocol in your view controllers, giving
- * each view controller "scene" a `rapidAccessibilityIdentifier`
- * as well as a set of `Control`s. These are the elements visisble
- * in this composite "scene".
- */
+public struct RapidControlInformation: Hashable {
+    public static let viewIdentifierSuffix: String = "_view_a11yID"
+
+    public var identifier: String {
+        get {
+            return "\(type)_\(index)_control_a11yID"
+        }
+    }
+
+    public var label: String {
+        get {
+            return "\(type(of: self))_control_a11yLabel"
+        }
+    }
+
+    public var hint: String {
+        get {
+            return "\(type(of: self))_control_a11yHint"
+        }
+    }
+
+    public var index: Int = 0
+    public var rapidType: accessibilityControlType = .any
+    public var traits: UIAccessibilityTraits = UIAccessibilityTraitNone
+    public var type: NSObject.Type
+
+    public var hashValue: Int {
+        return identifier.hash
+    }
+
+    init(type: NSObject.Type) {
+        self.type = type
+    }
+}
+
+public func ==(lhs: RapidControlInformation, rhs: RapidControlInformation) -> Bool {
+    return lhs.identifier == rhs.identifier
+}
+
+public protocol Accessible {
+    static func rapidControlsInformation() -> Array<RapidControlInformation>
+}
+
 public protocol RapidIdentifiable {
     associatedtype Control: RapidControlIdentifiable
-    var rapidAccessibilityIdentifier: String { get }
-    var accessibilityControls: Set<Control> { get }
+    var accessibilityControls: Array<Control> { get }
     func applyAccessibility()
 }
 
-/**
- * protocol RapidControlIdentifiable
- *
- * Use: 
- * Implement on classes of controls.
- * 
- * Info:
- * Controls are currently best generically thought of as NSObjects that are visible
- * to the accessibility engine. They are specified by a tuple of a couple items,
- * which are all defaulted to sane values in all situations, but can be always
- * overridden to achieve custom VoiceOver behavior and increase testability.
- */
 public protocol RapidControlIdentifiable: Hashable {
-    var accessibilityProperties: (identifier: String, rapidType: accessibilityControlType, traits: UIAccessibilityTraits, label: String, hint: String) { get set }
-    func applyProperties()
+    static var accessibilityProperties: RapidControlInformation { get set }
+    func applyProperties(_ controlTag: Int, classOverride controlType: NSObject.Type?) -> RapidControlInformation
 }

@@ -22,51 +22,57 @@ import Foundation
 import XCTest
 import RapidA11y
 
-public extension accessibilityControlType {
-    public func xcElementQueryForControl(_ app: XCUIApplication) -> XCUIElementQuery {
-        switch self {
+public extension XCUIApplication {
+    public func elementInViewForControl(_ viewIdentifier: String, controlType: accessibilityControlType) -> XCUIElementQuery {
+        return descendants(matching: .any)[viewIdentifier].descendants(matching: .any).queryForControlType(controlType)
+    }
+}
+
+public extension XCUIElementQuery {
+    public func queryForControlType(_ controlType: accessibilityControlType) -> XCUIElementQuery {
+        switch controlType {
         case .activityIndicator:
-            return app.activityIndicators
+            return activityIndicators
         case .alert:
-            return app.alerts
+            return alerts
         case .any:
-            return app.descendants(matching: .any)
+            return descendants(matching: .any)
         case .button:
-            return app.buttons
+            return buttons
         case .cell:
-            return app.cells
+            return cells
         case .collectionView:
-            return app.collectionViews
+            return collectionViews
         case .datePicker:
-            return app.datePickers
+            return datePickers
         case .image:
-            return app.images
+            return images
         case .label:
-            return app.staticTexts
+            return staticTexts
         case .navigationBar:
-            return app.navigationBars
+            return navigationBars
         case .scrollView:
-            return app.scrollViews
+            return scrollViews
         case .searchField:
-            return app.searchFields
+            return searchFields
         case .secureTextField:
-            return app.secureTextFields
+            return secureTextFields
         case .`switch`:
-            return app.switches
+            return switches
         case .tabBar:
-            return app.tabBars
+            return tabBars
         case .table:
-            return app.tables
+            return tables
         case .textField:
-            return app.textFields
+            return textFields
         case .textView:
-            return app.textViews
+            return textViews
         case .toolbar:
-            return app.toolbars
+            return toolbars
         case .webView:
-            return app.webViews
+            return webViews
         default:
-            return app.descendants(matching: .any)
+            return descendants(matching: .any)
         }
     }
 }

@@ -45,7 +45,7 @@ public enum accessibilityControlType {
 }
 
 extension NSObject {
-    public var accessibilityControlInformation: (type: accessibilityControlType, traits: UIAccessibilityTraits) {
+    public static var accessibilityControlInformation: (type: accessibilityControlType, traits: UIAccessibilityTraits) {
         switch self {
         case is UIActivityIndicatorView:
             return (.activityIndicator, UIAccessibilityTraitNone)

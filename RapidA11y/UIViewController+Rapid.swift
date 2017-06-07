@@ -22,23 +22,27 @@ import UIKit
 extension UIViewController: RapidIdentifiable {
     public typealias Control = NSObject
 
-    open var rapidAccessibilityIdentifier: String {
-        get {
-            return "\(type(of: self).description)_view_a11yID"
-        }
-    }
-
-    open var accessibilityControls: Set<Control> {
+    open var accessibilityControls: Array<Control> {
         get {
             // Override this in your view controllers to specify controls and their properties.
-            return Set<Control>()
+            return []
         }
     }
 
     public func applyAccessibility() {
-        _ = accessibilityControls.map {
-            control in
-            control.applyProperties()
+        guard let accessibleSelf = self as? Accessible else {
+            return
+        }
+        let selfType = type(of: accessibleSelf)
+        view.accessibilityIdentifier = "\(selfType)\(RapidControlInformation.viewIdentifierSuffix)"
+        let controlsInformation: [RapidControlInformation] = selfType.rapidControlsInformation()
+        guard controlsInformation.count == accessibilityControls.count else {
+            // mismatch, fail
+            return
+        }
+        _ = accessibilityControls.enumerated().map {
+            index, control in
+            control.applyProperties(index, classOverride: controlsInformation[index].type)
         }
     }
 }
