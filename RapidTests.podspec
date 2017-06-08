@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidTests'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'UI testing framework build on top of Quick & Nimble.'
   s.description      = 'RapidTests is a UI testing framework built to ease the creation and
   maintenance of UI tests in a complex iOS application. This framework is used only in

@@ -2,6 +2,10 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.8:
+- Small change to wait method, removing `waitWithAssertion` ability,
+since it wasn't working anyways.
+
 ##### v 1.0.7:
 - Continuing rapid improvements across the board
 - Sample integration with Creatubbles project revealed
