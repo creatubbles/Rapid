@@ -47,13 +47,13 @@ public extension XCUIApplication {
     @discardableResult
     public func elementExistsForIdentifier(_ identifier: String, withTimeout timeout: TimeInterval = 10) -> Bool {
         let element = descendants(matching: .any)[identifier]
-        wait(withFailureAssertion: false, withTimeout: timeout, for: element.exists)
+        wait(withTimeout: timeout, for: element.exists)
         return element.exists
     }
 
     @discardableResult
     public func elementHittable(_ element: XCUIElement, andTimeout timeout: TimeInterval = 10) -> Bool {
-        wait(withFailureAssertion: false, withTimeout: timeout, for: element.isHittable)
+        wait(withTimeout: timeout, for: element.isHittable)
         return element.isHittable
     }
 
@@ -108,13 +108,8 @@ public extension XCUIApplication {
      * These condition can be any closure that returns a boolean.
      */
     @discardableResult
-    @nonobjc public func wait(withFailureAssertion assertIfFailure: Bool = true, withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping (Void) -> Bool) -> Bool? {
+    @nonobjc public func wait(withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping (Void) -> Bool) -> Bool? {
         let queue = DispatchQueue.global(qos: .userInteractive)
-        if assertIfFailure {
-            XCTAssertTrue(wait(timeout, andQueue: queue){ condition() })
-            return nil
-        } else {
             return wait(timeout, andQueue: queue){ condition() }
-        }
     }
 }
