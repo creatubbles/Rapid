@@ -89,6 +89,10 @@ class ViewController: UIViewController, RapidAccessible {
 
 ```
 
+## Questions?
+
+Please visit [our FAQ](./FAQ.md) to see all commonly asked questions and their answers.
+
 ## License
 #### MIT License
 
