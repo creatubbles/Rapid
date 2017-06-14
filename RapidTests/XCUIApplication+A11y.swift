@@ -17,19 +17,18 @@
 //  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-import XCTest
+import Foundation
 import Nimble
 import RapidA11y
-import Foundation
+import XCTest
 
 public extension XCUIApplication {
 
     @discardableResult
-    public func elementsForControlType(_ type: accessibilityControlType, matching: NSObject.Type) -> [XCUIElement] {
+    public func elementsForControlType(_ type: AccessibilityControlType, matching: NSObject.Type) -> [XCUIElement] {
         let query = descendants(matching: .any).queryForControlType(type)
         let allElementsMatchingQuery = query.allElementsBoundByAccessibilityElement
-        let matches: [XCUIElement] = allElementsMatchingQuery.filter {
-            element in
+        let matches: [XCUIElement] = allElementsMatchingQuery.filter { element in
             return element.identifier.contains("\(matching)")
         }
         return matches
@@ -95,7 +94,7 @@ public extension XCUIApplication {
         // If we haven't fulfilled the condition yet, test one more time before returning. This avoids
         // that we fail the test just because we somehow failed to properly poll the condition, e.g. if
         // the run loop didn't wake up.
-        if (!fulfilled) {
+        if !fulfilled {
             fulfilled = condition()
         }
 
@@ -107,8 +106,8 @@ public extension XCUIApplication {
      * Waits on a CFRunLoop through the `TestWaitHelper` helper for a boolean condition passed in as a closure.
      * These condition can be any closure that returns a boolean.
      */
-    @discardableResult
-    @nonobjc public func wait(withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping () -> Bool) -> Bool? {
+    @discardableResult @nonobjc
+    public func wait(withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping () -> Bool) -> Bool? {
         let queue = DispatchQueue.global(qos: .userInteractive)
             return wait(timeout, andQueue: queue) { condition() }
     }

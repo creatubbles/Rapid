@@ -21,9 +21,7 @@ import UIKit
 
 extension NSObject: RapidControlIdentifiable {
     public static var accessibilityProperties: RapidControlInformation {
-        get {
-            return RapidControlInformation(type: self)
-        }
+        return RapidControlInformation(type: self)
     }
 
     @discardableResult
