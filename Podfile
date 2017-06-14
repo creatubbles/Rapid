@@ -32,10 +32,12 @@ target 'RapidDemoUITests' do
 end
 
 target 'RapidA11y' do
+  pod 'SwiftLint'
 end
 
 target 'RapidTests' do
   pod 'RapidA11y'
+  pod 'SwiftLint'
   pod 'Nimble', '5.0.0'
   pod 'Quick', '0.10.0'
 end
