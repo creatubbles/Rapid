@@ -57,7 +57,7 @@ public extension XCUIApplication {
         return element.isHittable
     }
 
-    func wait(_ timeout: TimeInterval, andQueue queue: DispatchQueue, withCondition  condition: @escaping (()->Bool)) -> Bool {
+    func wait(_ timeout: TimeInterval, andQueue queue: DispatchQueue, withCondition  condition: @escaping (() -> Bool)) -> Bool {
         // Based on http://bou.io/CTTRunLoopRunUntil.html
         var fulfilled = false
 
@@ -108,8 +108,8 @@ public extension XCUIApplication {
      * These condition can be any closure that returns a boolean.
      */
     @discardableResult
-    @nonobjc public func wait(withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping (Void) -> Bool) -> Bool? {
+    @nonobjc public func wait(withTimeout timeout: TimeInterval, for condition: @autoclosure @escaping () -> Bool) -> Bool? {
         let queue = DispatchQueue.global(qos: .userInteractive)
-            return wait(timeout, andQueue: queue){ condition() }
+            return wait(timeout, andQueue: queue) { condition() }
     }
 }

@@ -32,7 +32,7 @@ extension NSObject: RapidControlIdentifiable {
         var properties = selfType.accessibilityProperties
         properties.index = controlTag
         properties.type = selfType
-        
+
         // only 3 controls supported by UIAccessibilityIdentification
         if let identifiableViewSelf = self as? UIView {
             identifiableViewSelf.accessibilityIdentifier = properties.identifier
