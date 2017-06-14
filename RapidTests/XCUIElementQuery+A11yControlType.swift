@@ -1,6 +1,5 @@
 //
 //  XCUIElementQuery+A11yControlType.swift
-//  Pods
 //
 //  Copyright 2017 Creatubbles
 //
@@ -19,17 +18,17 @@
 //
 
 import Foundation
-import XCTest
 import RapidA11y
+import XCTest
 
 public extension XCUIApplication {
-    public func elementInViewForControl(_ viewIdentifier: String, controlType: accessibilityControlType) -> XCUIElementQuery {
+    public func elementInViewForControl(_ viewIdentifier: String, controlType: AccessibilityControlType) -> XCUIElementQuery {
         return descendants(matching: .any)[viewIdentifier].descendants(matching: .any).queryForControlType(controlType)
     }
 }
 
 public extension XCUIElementQuery {
-    public func queryForControlType(_ controlType: accessibilityControlType) -> XCUIElementQuery {
+    public func queryForControlType(_ controlType: AccessibilityControlType) -> XCUIElementQuery {
         switch controlType {
         case .activityIndicator:
             return activityIndicators

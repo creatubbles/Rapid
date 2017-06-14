@@ -1,0 +1,40 @@
+opt_in_rules:
+  - trailing_semicolon
+  - vertical_whitespace
+  - weak_delegate
+  - leading_whitespace
+  - empty_count
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - private_outlet
+  - nimble_operator
+  - attributes
+  - operator_usage_whitespace
+  - closure_end_indentation
+  - first_where
+  - sorted_imports
+  - object_literal
+  - number_separator
+  - prohibited_super_call
+  - fatal_error_message
+
+# fix these later -- lots of little tedious changes
+disabled_rules:
+  - line_length
+  - function_body_length
+  - attributes # related to keywords: @discardableResult @nonobjc  @autoclosure @escaping
+  - cyclomatic_complexity
+  - operator_whitespace # func ==() warns on this rule
+  
+included:
+  - RapidA11y
+  - RapidTests
+  - RapidDemo
+  - RapidTests
+  - RapidDemoUITests
+
+excluded:
+  - Pods
+

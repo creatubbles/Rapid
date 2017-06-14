@@ -18,29 +18,25 @@
 //  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-
-import UIKit
 import RapidA11y
+import UIKit
 
 class ViewController: UIViewController, RapidAccessible {
-    @IBOutlet weak var buttonA: UIButton!
-    @IBOutlet weak var buttonB: UIButton!
-    @IBOutlet weak var buttonC: UIButton!
-    @IBOutlet weak var buttonD: UIButton!
+    @IBOutlet weak private var buttonA: UIButton!
+    @IBOutlet weak private var buttonB: UIButton!
+    @IBOutlet weak private var buttonC: UIButton!
+    @IBOutlet weak private var buttonD: UIButton!
 
-    static func rapidControlsInformation() -> Array<RapidControlInformation> {
+    static func rapidControlsInformation() -> [RapidControlInformation] {
         var buttonInfo = UIButton.accessibilityProperties
-        return Array(0...3).map {
-            index in
+        return Array(0...3).map { index in
             buttonInfo.index = index
             return buttonInfo
         }
     }
 
-    public override var accessibilityControls: Array<NSObject> {
-        get {
-            return [buttonA, buttonB, buttonC, buttonD]
-        }
+    public override var accessibilityControls: [NSObject] {
+        return [buttonA, buttonB, buttonC, buttonD]
     }
 
     public override func viewDidLoad() {
@@ -48,4 +44,3 @@ class ViewController: UIViewController, RapidAccessible {
         applyAccessibility()
     }
 }
-

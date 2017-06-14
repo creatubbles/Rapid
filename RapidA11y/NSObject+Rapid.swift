@@ -21,9 +21,7 @@ import UIKit
 
 extension NSObject: RapidControlIdentifiable {
     public static var accessibilityProperties: RapidControlInformation {
-        get {
-            return RapidControlInformation(type: self)
-        }
+        return RapidControlInformation(type: self)
     }
 
     @discardableResult
@@ -32,7 +30,7 @@ extension NSObject: RapidControlIdentifiable {
         var properties = selfType.accessibilityProperties
         properties.index = controlTag
         properties.type = selfType
-        
+
         // only 3 controls supported by UIAccessibilityIdentification
         if let identifiableViewSelf = self as? UIView {
             identifiableViewSelf.accessibilityIdentifier = properties.identifier
