@@ -1,4 +1,4 @@
-#     Copyright (c) 2017 coolbnjmn <hendricksbenjamin@gmail.com>
+#     Copyright (c) 2017 Creatubbles <benjamin@creatubbles.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,15 @@
 #
 # Podfile used for Demo purposes only.
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 use_frameworks!
 
 target 'RapidDemo' do
-  pod 'RapidA11y'
+  pod 'RapidA11y', :path => '.'
 end
 
 target 'RapidDemoUITests' do
-  pod 'RapidTests'
+  pod 'RapidTests', :path => '.'
 end
 
 target 'RapidA11y' do
@@ -36,8 +36,6 @@ target 'RapidA11y' do
 end
 
 target 'RapidTests' do
-  pod 'RapidA11y'
+  pod 'RapidA11y', :path => '.'
   pod 'SwiftLint'
-  pod 'Nimble', '5.0.0'
-  pod 'Quick', '0.10.0'
 end
