@@ -5,7 +5,7 @@
 [![RapidTests Platforms](https://img.shields.io/cocoapods/p/RapidTests.svg)](https://cocoapods.org/pods/RapidTests)
 
 Rapid is a UI test development framework for Swift (and Objective-C soon!).
-Inspired heavily by [Quick](https://github.com/Quick/quick), and currently using both [Quick](https://github.com/Quick/quick) and [Nimble](https://github.com/Quick/Nimble) as dependencies. 
+Inspired by [Quick](https://github.com/Quick/quick) and [Nimble](https://github.com/Quick/Nimble).
 
 ## Installation
 ##### Cocoapods
@@ -18,9 +18,6 @@ use_frameworks!
 
 def test_pods
     # define test pod imports
-    # Rapid uses both Quick and Nimble
-    pod 'Quick', '~> 0.10.0'
-    pod 'Nimble', '~> 5.0.0'
     pod 'RapidTests', '1.0.8'
 end
 
