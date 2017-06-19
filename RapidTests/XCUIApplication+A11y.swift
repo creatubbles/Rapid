@@ -18,7 +18,6 @@
 //
 
 import Foundation
-import Nimble
 import RapidA11y
 import XCTest
 
@@ -37,9 +36,9 @@ public extension XCUIApplication {
     @discardableResult
     public func elementForIdentifier(_ identifier: String, withTimeout timeout: TimeInterval = 10) -> XCUIElement {
         let element = descendants(matching: .any)[identifier]
-        expect(element).toNot(beNil())
+        wait(withTimeout: 0.5, for: element.exists)
         wait(withTimeout: timeout, for: element.isHittable)
-        expect(element.isHittable).to(beTrue())
+        XCTAssert(element.isHittable, "Element was not hittable after timeout time, error occurred.")
         return element
     }
 

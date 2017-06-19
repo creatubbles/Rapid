@@ -1,15 +1,14 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidTests'
-  s.version          = '1.0.8'
-  s.summary          = 'UI testing framework build on top of Quick & Nimble.'
+  s.version          = '1.0.9'
+  s.summary          = 'UI testing framework built on top of RapidA11y.'
   s.description      = 'RapidTests is a UI testing framework built to ease the creation and
   maintenance of UI tests in a complex iOS application. This framework is used only in
   test targets, but depends on a partner framework that is integrated into the
-  application targets (RapidA11y). RapidTests is heavily built on Quick & Nimble for the
-  definition and syntax of writing tests and assertions in Swift.'
+  application targets (RapidA11y).'
   s.homepage         = 'https://github.com/creatubbles/Rapid'
   s.license          = { :type => 'MIT', :text => '
-    Copyright (c) 2017 coolbnjmn <hendricksbenjamin@gmail.com>
+  Copyright 2017 Creatubbles
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,8 +34,6 @@ THE SOFTWARE.
   s.ios.deployment_target = '10.0'
   s.source_files = 'RapidTests/*.*'
   s.frameworks = 'XCTest'
-  s.dependency 'Quick', '~> 0.10.0'
-  s.dependency 'Nimble', '~> 5.0.0'
   s.dependency 'RapidA11y'
 
 end

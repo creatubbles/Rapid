@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidA11y'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'Accessibility framework build to interact with RapidTests, a UI testing framework.'
   s.description      = 'RapidA11y is an accessibility framework built to ease the addition of accessibility to
   an iOS application. This enables both easy VoiceOver implementations and integration into RapidTests, a partner
-  UI testing framework built on top of Quick & Nimble.'
+  UI testing framework.'
   s.homepage         = 'https://github.com/creatubbles/Rapid'
   s.license          = { :type => 'MIT', :text => '
   Copyright 2017 Creatubbles

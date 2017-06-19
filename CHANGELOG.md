@@ -2,6 +2,10 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.0.9:
+- Remove dependency on Nimble & Quick. While Rapid is named and inspired by 
+Quick&Nimble, it was just not necessary in these two pods.
+
 ##### v 1.0.8:
 - Small change to wait method, removing `waitWithAssertion` ability,
 since it wasn't working anyways.
