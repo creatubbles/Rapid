@@ -18,12 +18,12 @@ use_frameworks!
 
 def test_pods
     # define test pod imports
-    pod 'RapidTests', '1.0.8'
+    pod 'RapidTests', '1.0.9'
 end
 
 abstract_target 'Common' do
     # other common target pods here   
-    pod 'RapidA11y', '1.0.8'
+    pod 'RapidA11y', '1.0.9'
 
     # app target which picks up RapidA11y pod and any other common pods
     target 'Example' do 
@@ -89,6 +89,10 @@ class ViewController: UIViewController, RapidAccessible {
 ## Questions?
 
 Please visit [our FAQ](./FAQ.md) to see all commonly asked questions and their answers.
+
+## Changelog
+
+To see what we've changed in the past, check out [our Changelog](./CHANGELOG.md).
 
 ## License
 #### MIT License
