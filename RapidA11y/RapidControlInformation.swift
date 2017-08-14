@@ -26,14 +26,6 @@ public struct RapidControlInformation: Hashable {
         return "\(type)_\(index)_control_a11yID"
     }
 
-    public var label: String {
-        return "\(type)_\(index)_control_a11yLabel"
-    }
-
-    public var hint: String {
-        return "\(type)_\(index)_control_a11yHint"
-    }
-
     public var index: Int = 0
     public var rapidType: AccessibilityControlType = .any
     public var traits: UIAccessibilityTraits = UIAccessibilityTraitNone

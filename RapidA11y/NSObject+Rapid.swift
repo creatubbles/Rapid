@@ -40,8 +40,6 @@ extension NSObject: RapidControlIdentifiable {
             identifiableImageSelf.accessibilityIdentifier = properties.identifier
         }
 
-        accessibilityHint = properties.hint
-        accessibilityLabel = properties.label
         accessibilityTraits = properties.traits
         return properties
     }
