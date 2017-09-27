@@ -20,14 +20,6 @@
 import UIKit
 
 extension UIViewController: RapidIdentifiable {
-    public typealias Control = NSObject
-
-    open func accessibilityControls() -> [Control] {
-        // Override this in your view controllers
-        // put actual references to UIControls in your views
-        return []
-    }
-
     // Make sure to call this in `viewDidLoad()` after your UI is set up
     public func applyAccessibility() {
         guard let accessibleSelf = self as? RapidAccessible else {

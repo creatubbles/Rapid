@@ -24,8 +24,6 @@ public protocol RapidAccessible {
 }
 
 public protocol RapidIdentifiable {
-    associatedtype Control: RapidControlIdentifiable
-    func accessibilityControls() -> [Control]
     func applyAccessibility()
 }
 
