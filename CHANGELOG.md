@@ -2,6 +2,12 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.1.0:
+- Update for Xcode 9 and Swift 4, still baseline to iOS 10.
+
+##### v 1.0.10:
+- No major changes it seems, nothing to report.
+
 ##### v 1.0.9:
 - Remove dependency on Nimble & Quick. While Rapid is named and inspired by 
 Quick&Nimble, it was just not necessary in these two pods.
