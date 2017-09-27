@@ -22,7 +22,7 @@ import UIKit
 extension UIViewController: RapidIdentifiable {
     public typealias Control = NSObject
 
-    open var accessibilityControls: [Control] {
+    open func accessibilityControls() -> [Control] {
         // Override this in your view controllers
         // put actual references to UIControls in your views
         return []
@@ -36,11 +36,13 @@ extension UIViewController: RapidIdentifiable {
         let selfType = type(of: accessibleSelf)
         view.accessibilityIdentifier = "\(selfType)\(RapidControlInformation.viewIdentifierSuffix)"
         let controlsInformation: [RapidControlInformation] = selfType.rapidControlsInformation()
-        guard controlsInformation.count == accessibilityControls.count else {
+        let controls: [NSObject] = accessibleSelf.rapidAccessibilityControls()
+        guard controlsInformation.count == controls.count else {
             assertionFailure("Mismatch on number of controls given to Rapid")
             return
         }
-        _ = accessibilityControls.enumerated().map { index, control in
+
+        _ = controls.enumerated().map { index, control in
             control.applyProperties(index, classOverride: controlsInformation[index].type)
         }
     }

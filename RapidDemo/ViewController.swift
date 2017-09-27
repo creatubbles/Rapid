@@ -35,7 +35,7 @@ class ViewController: UIViewController, RapidAccessible {
         }
     }
 
-    public override var accessibilityControls: [NSObject] {
+    public func rapidAccessibilityControls() -> [NSObject] {
         return [buttonA, buttonB, buttonC, buttonD]
     }
 

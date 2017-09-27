@@ -19,12 +19,13 @@
 import UIKit
 
 public protocol RapidAccessible {
-    associatedtype Control: RapidControlIdentifiable
     static func rapidControlsInformation() -> [RapidControlInformation]
-    var accessibilityControls: [Control] { get }
+    func rapidAccessibilityControls() -> [NSObject]
 }
 
 public protocol RapidIdentifiable {
+    associatedtype Control: RapidControlIdentifiable
+    func accessibilityControls() -> [Control]
     func applyAccessibility()
 }
 
