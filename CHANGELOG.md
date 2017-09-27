@@ -2,6 +2,10 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.1.1:
+- Moved accessibilityControls into RapidAccessible protocol (from RapidIdentifiable)
+- Killed some warnings
+
 ##### v 1.1.0:
 - Update for Xcode 9 and Swift 4, still baseline to iOS 10.
 

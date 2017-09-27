@@ -74,7 +74,7 @@ public extension XCUIApplication {
         // We add a timer dispatch source here to make sure that we wake up at least every 0.x seconds
         // in case we're waiting for a condition that does not necessarily wake up the run loop.
         let timer: DispatchSourceTimer = DispatchSource.makeTimerSource(flags: DispatchSource.TimerFlags(rawValue: 0), queue: queue)
-        timer.scheduleRepeating(deadline: .now(), interval: .milliseconds(100))
+        timer.schedule(deadline: .now(), repeating: .milliseconds(100))
         timer.setEventHandler(handler: {
             // purposeful no-op
         })
