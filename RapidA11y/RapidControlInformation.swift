@@ -23,13 +23,16 @@ public struct RapidControlInformation: Hashable {
     public static let viewIdentifierSuffix: String = "_view_a11yID"
 
     public var identifier: String {
-        return "\(type)_\(index)_control_a11yID"
+        let scope = self.scope ?? ""
+
+        return "\(type)_\(index)_\(scope)_control_a11yID"
     }
 
     public var index: Int = 0
     public var rapidType: AccessibilityControlType = .any
     public var traits: UIAccessibilityTraits = UIAccessibilityTraitNone
     public var type: NSObject.Type
+    public var scope: String?
 
     public var hashValue: Int {
         return identifier.hash
