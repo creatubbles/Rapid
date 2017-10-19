@@ -34,3 +34,21 @@ This method defines the "static definition" of this screen. There are 2 definiti
 ```
 
 As you can see the indexing here simply follows the visual approach described above. The `accessibilityProperties` variable is automatically defined on all `NSObject`s when RapidA11y is imported, and the only thing to define is each control's index property (it's position in the array, and by continuation also it's position in the UI for the accessibility engine to read through the controls).
+
+#### General UI Tests: Is there a difference between these two?
+
+```
+expect(app.descendants(matching: .any)["\(MyViewController.self)\(RapidControlInformation.viewIdentifierSuffix)"].isHittable).to(beTrue())
+```
+
+and
+
+```
+let viewInfo = MyViewController.rapidControlsInformation()[0]
+let viewXCUIElement = app.elementForIdentifier(viewInfo.identifier)
+expect(viewXCUIElement.isHittable).to(beTrue())
+```
+
+The second option guarantees to the third line that if the `viewXCUIElement` does exist, then check for `isHittable`. 
+In the first example, we noticed many issues with inconsistent evaluation where `isHittable` seemingly occurred before
+the `app.descendants(mathcing: .any)` occurred. 

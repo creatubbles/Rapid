@@ -2,8 +2,14 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.2.0:
+- Add optional scope property to XCUIElement properties to fix multiple
+match found issue when multiple VCs in the accessibility hierarchy contain
+the same types of accessibility controls.
+
 ##### v 1.1.3:
 - Switch back to Swift 3.2, to accomodate for a single Swift version in base podfile.
+
 ##### v 1.1.2:
 - The `var accessibilityControls` is now a function! `rapidAccessibilityControls`, 
 just use that to return your variables you otherwise put into accessibilityControls.
