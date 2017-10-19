@@ -34,8 +34,11 @@ extension UIViewController: RapidIdentifiable {
             return
         }
 
-        _ = controls.enumerated().map { index, control in
-            control.applyProperties(index, classOverride: controlsInformation[index].type)
+        _ = controls.enumerated().map {
+            let index = $0.offset
+            let control = $0.element
+
+            control.applyProperties(controlsInformation[index])
         }
     }
 }

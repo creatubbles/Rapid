@@ -25,12 +25,7 @@ extension NSObject: RapidControlIdentifiable {
     }
 
     @discardableResult
-    public func applyProperties(_ controlTag: Int = 0, classOverride controlType: NSObject.Type? = nil) -> RapidControlInformation {
-        let selfType = controlType ?? type(of: self)
-        var properties = selfType.accessibilityProperties
-        properties.index = controlTag
-        properties.type = selfType
-
+    public func applyProperties(_ properties: RapidControlInformation) -> RapidControlInformation {
         // only 3 controls supported by UIAccessibilityIdentification
         if let identifiableViewSelf = self as? UIView {
             identifiableViewSelf.accessibilityIdentifier = properties.identifier
