@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidTests'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'UI testing framework built on top of RapidA11y.'
   s.description      = 'RapidTests is a UI testing framework built to ease the creation and
   maintenance of UI tests in a complex iOS application. This framework is used only in

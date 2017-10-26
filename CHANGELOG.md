@@ -2,6 +2,10 @@
 ## Note: Will eventually be automated by fastlane, but manual updates for now!
 ## Note 2: Keep this document's max column width to 80 characters! Thank you :) 
 
+##### v 1.2.1:
+- Add UIView accessibility access, to allow for more custom handling just
+like view controllers. Useful for all custom subviews!
+
 ##### v 1.2.0:
 - Add optional scope property to XCUIElement properties to fix multiple
 match found issue when multiple VCs in the accessibility hierarchy contain

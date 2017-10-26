@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RapidA11y'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Accessibility framework build to interact with RapidTests, a UI testing framework.'
   s.description      = 'RapidA11y is an accessibility framework built to ease the addition of accessibility to
   an iOS application. This enables both easy VoiceOver implementations and integration into RapidTests, a partner

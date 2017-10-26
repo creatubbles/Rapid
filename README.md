@@ -18,12 +18,12 @@ use_frameworks!
 
 def test_pods
     # define test pod imports
-    pod 'RapidTests', '1.2.0'
+    pod 'RapidTests', '1.2.1'
 end
 
 abstract_target 'Common' do
     # other common target pods here   
-    pod 'RapidA11y', '1.2.0'
+    pod 'RapidA11y', '1.2.1'
 
     # app target which picks up RapidA11y pod and any other common pods
     target 'Example' do 
