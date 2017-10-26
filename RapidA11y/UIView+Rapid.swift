@@ -1,5 +1,5 @@
 //
-//  UIViewController+Rapid.swift
+//  UIView+Rapid.swift
 //
 //  Copyright 2017 Creatubbles
 //
@@ -16,21 +16,23 @@
 //  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 //  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
-
 import UIKit
 
-public protocol RapidIdentifiable {
-    func applyAccessibility()
+protocol RapidViewIdentifiable {
+    func applyViewAccessibility()
 }
 
-extension UIViewController: RapidIdentifiable {
-    // Make sure to call this in `viewDidLoad()` after your UI is set up
-    public func applyAccessibility() {
+extension UIView: RapidViewIdentifiable {
+    // Make sure to call this in `awakeFromNib()` or anywhere
+    // that makes sense after your UI is set up
+    public func applyViewAccessibility() {
         guard let accessibleSelf = self as? RapidAccessible else {
             return
         }
         let selfType = type(of: accessibleSelf)
-        view.accessibilityIdentifier = "\(selfType)\(RapidControlInformation.viewIdentifierSuffix)"
+        // This will get overridden by a scope value if 'self' view is in controls array.
+        // Provides default fallback if not.
+        self.accessibilityIdentifier = "\(selfType)\(RapidControlInformation.viewIdentifierSuffix)"
         let controlsInformation: [RapidControlInformation] = selfType.rapidControlsInformation()
         let controls: [NSObject] = accessibleSelf.rapidAccessibilityControls()
         guard controlsInformation.count == controls.count else {

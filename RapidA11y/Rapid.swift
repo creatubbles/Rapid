@@ -23,10 +23,6 @@ public protocol RapidAccessible {
     func rapidAccessibilityControls() -> [NSObject]
 }
 
-public protocol RapidIdentifiable {
-    func applyAccessibility()
-}
-
 public protocol RapidControlIdentifiable: Hashable {
     static var accessibilityProperties: RapidControlInformation { get }
     func applyProperties(_ properties: RapidControlInformation) -> RapidControlInformation

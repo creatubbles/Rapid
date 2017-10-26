@@ -16,6 +16,7 @@
 		3F115DE11EA8D5C9003537E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE01EA8D5C9003537E8 /* Assets.xcassets */; };
 		3F115DE41EA8D5C9003537E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F115DE21EA8D5C9003537E8 /* LaunchScreen.storyboard */; };
 		3F115DFA1EA8D5C9003537E8 /* RapidDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */; };
+		3F8162CD1FA1D9EF00DE8637 /* UIView+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8162CC1FA1D9EF00DE8637 /* UIView+Rapid.swift */; };
 		3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */; };
 		3FA621591EE6FD0D00FFDEF0 /* RapidA11y.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621571EE6FD0D00FFDEF0 /* RapidA11y.podspec */; };
 		3FA6215A1EE6FD0D00FFDEF0 /* RapidTests.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 3FA621581EE6FD0D00FFDEF0 /* RapidTests.podspec */; };
@@ -76,6 +77,7 @@
 		3F115DF91EA8D5C9003537E8 /* RapidDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidDemoUITests.swift; sourceTree = "<group>"; };
 		3F115DFB1EA8D5C9003537E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6D454B1EA8DD46003DA7CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F8162CC1FA1D9EF00DE8637 /* UIView+Rapid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rapid.swift"; sourceTree = "<group>"; };
 		3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rapid.swift"; sourceTree = "<group>"; };
 		3FA621531EE6FC2D00FFDEF0 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		3FA621541EE6FC2D00FFDEF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				B20901721E88678B0091BE07 /* Info.plist */,
 				3FCFBEC21EE6D0D900A6FAFE /* UIViewController+Rapid.swift */,
 				3FA621511EE6E79100FFDEF0 /* NSObject+Rapid.swift */,
+				3F8162CC1FA1D9EF00DE8637 /* UIView+Rapid.swift */,
 			);
 			path = RapidA11y;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				B209018A1E8867BD0091BE07 /* Rapid.swift in Sources */,
 				3FA621521EE6E79100FFDEF0 /* NSObject+Rapid.swift in Sources */,
 				B20901841E8867BD0091BE07 /* RapidControlInformation.swift in Sources */,
+				3F8162CD1FA1D9EF00DE8637 /* UIView+Rapid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
