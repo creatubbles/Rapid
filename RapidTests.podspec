@@ -32,7 +32,7 @@ THE SOFTWARE.
   s.source           = { :git => 'https://github.com/creatubbles/Rapid.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.source_files = 'RapidTests/*.*'
+  s.source_files = 'RapidTests/*.{h,m,swift}'
   s.frameworks = 'XCTest'
   s.dependency 'RapidA11y'
 
