@@ -32,5 +32,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   s.source           = { :git => 'https://github.com/creatubbles/Rapid.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.source_files = 'RapidA11y/*.*'
+  s.source_files = 'RapidA11y/*.{h,m,swift}'
 end
